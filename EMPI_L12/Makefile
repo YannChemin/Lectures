@@ -38,4 +38,5 @@ clean:
 	rm -f ${filename}.bbl
 	rm -f ${filename}.blg
 	rm -f ${filename}.toc
+	rm -f ${filename}.synctex.gz
 
