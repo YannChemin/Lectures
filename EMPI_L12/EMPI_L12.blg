@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: EMPI_L12.aux
+The style file: apalike.bst
+Database file #1: EMPI_L12.bib
+Warning--entry type for "Jeffries:2015:Online" isn't style-file defined
+--line 56 of file EMPI_L12.bib
+You've used 8 entries,
+            1935 wiz_defined-function locations,
+            521 strings with 5024 characters,
+and the built_in function-call counts, 3077 in all, are:
+= -- 304
+> -- 120
+< -- 5
++ -- 40
+- -- 40
+* -- 269
+:= -- 547
+add.period$ -- 23
+call.type$ -- 8
+change.case$ -- 59
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 108
+empty$ -- 216
+format.name$ -- 50
+if$ -- 585
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 42
+num.names$ -- 24
+pop$ -- 45
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 83
+stack$ -- 0
+substring$ -- 240
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 46
+warning$ -- 0
+while$ -- 28
+width$ -- 0
+write$ -- 102
+(There was 1 warning)
