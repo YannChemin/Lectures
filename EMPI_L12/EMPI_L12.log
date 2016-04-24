@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.26)  24 APR 2016 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.26)  24 APR 2016 23:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -773,7 +773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
 
 <./images/physics_stackexchange_com_questions_165283_gas_giant_six_times_more_m
-assive.png, id=58, 576.1525pt x 576.1525pt>
+assive.png, id=64, 576.1525pt x 576.1525pt>
 File: ./images/physics_stackexchange_com_questions_165283_gas_giant_six_times_m
 ore_massive.png Graphic file (type png)
 
@@ -812,7 +812,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
 
-<./images/pollack1996.png, id=75, 1406.25375pt x 697.60625pt>
+<./images/pollack1996.png, id=81, 1406.25375pt x 697.60625pt>
 File: ./images/pollack1996.png Graphic file (type png)
 
 <use ./images/pollack1996.png>
@@ -850,7 +850,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-<./images/bate2003.png, id=96, 1046.91125pt x 1052.93375pt>
+<./images/bate2003.png, id=102, 1046.91125pt x 1052.93375pt>
 File: ./images/bate2003.png Graphic file (type png)
 
 <use ./images/bate2003.png>
@@ -861,7 +861,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-<./images/chambers2009.png, id=111, 598.235pt x 687.56876pt>
+<./images/chambers2009.png, id=117, 598.235pt x 687.56876pt>
 File: ./images/chambers2009.png Graphic file (type png)
 
 <use ./images/chambers2009.png>
@@ -889,7 +889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-<./images/lissauer2014.png, id=124, 1503.6175pt x 998.73125pt>
+<./images/lissauer2014.png, id=130, 1503.6175pt x 998.73125pt>
 File: ./images/lissauer2014.png Graphic file (type png)
 
 <use ./images/lissauer2014.png>
@@ -916,44 +916,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
 [6 <./images/lissauer2014.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--276
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--276
+Underfull \hbox (badness 10000) in paragraph at lines 276--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--276
+Underfull \hbox (badness 10000) in paragraph at lines 276--280
 
  []
 
-(./EMPI_L12.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--280
+
+ []
+
+(./EMPI_L12.bbl
+Underfull \hbox (badness 3449) in paragraph at lines 16--19
+[]\OT1/phv/m/n/12 Chamberlin, T. and Moul-ton, F.
+ []
+
+[7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+ [8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
  (./EMPI_L12.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
 Package rerunfilecheck Info: File `EMPI_L12.out' has not changed.
 (rerunfilecheck)             Checksum: 25FEB9E42910BFA46CB36C4CE960C74D;498.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
  ) 
 Here is how much of TeX's memory you used:
- 7894 strings out of 494474
- 118355 string characters out of 6171352
- 216805 words of memory out of 5000000
- 11183 multiletter control sequences out of 15000+600000
+ 7902 strings out of 494474
+ 118518 string characters out of 6171352
+ 217011 words of memory out of 5000000
+ 11187 multiletter control sequences out of 15000+600000
  19411 words of font info for 41 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 44i,11n,43p,748b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,43p,748b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
@@ -966,10 +979,10 @@ fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on EMPI_L12.pdf (7 pages, 1469929 bytes).
+Output written on EMPI_L12.pdf (8 pages, 1474017 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

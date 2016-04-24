@@ -12,6 +12,11 @@ Bate, M., Lubow, S., Ogilvie, G., and Miller, K. (2003).
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   341(1):213--229.
 
+\bibitem[Chamberlin and Moulton, 1909]{chamberlin1909development}
+Chamberlin, T. and Moulton, F. (1909).
+\newblock The development of the planetesimal hypothesis.
+\newblock {\em Science}, pages 642--645.
+
 \bibitem[Chambers, 2009]{chambers2009planetary}
 Chambers, J.~E. (2009).
 \newblock Planetary migration: What does it mean for planet formation?
@@ -21,6 +26,18 @@ Chambers, J.~E. (2009).
 Jeffries, R. (2015).
 \newblock How can a gas giant be about the same size but six times more massive
   than jupiter?
+
+\bibitem[Kant, 1755]{kant1755allgemeine}
+Kant, I. (1755).
+\newblock Allgemeine naturgeschichte des himmels.
+\newblock {\em Johann Friderich Petersen, K{\"o}nigsberg und Leipzig (English
+  translation: W. Hastie, 1968, in Kant’s Cosmology, Universal Natural
+  History and Theories of the Heavens. Greenwood Publishing, New York)}.
+
+\bibitem[Laplace, 1796]{laplace1796exposition}
+Laplace, P. (1796).
+\newblock Exposition du systeme du monde: Vol. 1--2.
+\newblock {\em Paris: Chez Courcier}.
 
 \bibitem[Lissauer, 1987]{lissauer1987timescales}
 Lissauer, J.~J. (1987).
