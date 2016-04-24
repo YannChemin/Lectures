@@ -91,7 +91,7 @@
 
 \section{Introduction}\vspace{-2ex}\titlerule[1pt]\bigskip
 
-There are four giant planets in the solar system, Jupter, Saturn, Uranus and Neptune. The first two are called \textbf{gas giants} and the two other \textbf{ice giants}, due to their physics and their major constituting elements. Gas giants are mostly NH$_3$, CH$_4$ and H$_2$O, while ice giants are mostly H and He, and further away from the Sun.
+There are four giant planets in the solar system, Jupter, Saturn, Uranus and Neptune. The first two are called \textbf{gas giants} and the two other \textbf{ice giants}, due to their physics and their major constituting elements. Gas giants are mostly NH$_3$, CH$_4$ and H$_2$O, while ice giants are mostly H and He, and are located further away from the Sun.
 
 \subsection{Exoplanetary research}\vspace{-1ex}\bigskip
 
@@ -201,10 +201,24 @@ The migration type 2 from \cite{chambers2009planetary} addresses giant planet sp
 \end{figure}
 
 
-\noindent The model from \cite{lissauer2009models} is looking into the mechanisms that permit the growth from Mars mass to Jupiter mass using hydrodynamic and thermal constraints. The parameters used in this model are the disk viscosity, the surface density and planet properties. They found that when the disk has a high viscocity, accretion is higher.\newline
-
 \noindent This model can form giant planet fast, they are formed in-situ and may migrate as seen in \cite{chambers2009planetary}. The environmental metallicity is much less important here than in \cite{pollack1996formation}.\newline
-\clearpage
+
+\noindent The model from \cite{lissauer2009models} is looking into the mechanisms that permit the growth from Mars mass to Jupiter mass using hydrodynamic and thermal constraints. The parameters used in this model are the disk viscosity, the surface density and planet properties. They found that when the disk has a high viscocity, accretion is higher. They define the accretion radius as in Equation \ref{accretionlissauer}.\newline
+
+\begin{equation}
+R_A = \frac {GM_P} {\frac {c_s{^2}}{k_1}+\frac{GM_P}{K_2 R_H}}
+\label{accretionlissauer}
+\end{equation}
+\smallskip
+
+Where:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item $c_s$ is the sound speed in the disk
+\item $k_1$ and $k_2$ are constants
+\item $R_H$ is the Hill sphere radius
+\end{itemize}
+ Using the equation, $R_A$ reduces to $k_1 \times R_{Bondi Accretion}$. In the limit of small $R_H$, $R_A$ reduces to $k_2 \times R_H$.\newline
 
 \begin{figure}
 \begin{center}
@@ -220,7 +234,7 @@ The migration type 2 from \cite{chambers2009planetary} addresses giant planet sp
 \begin{itemize}
 \setlength\itemsep{0em}
 \item  The flow of gas in the circumsolar disk limits the region occupied by the planet’s tenuous gaseous envelope to $<$
- 0.25 R$_H$ (Hill sphere radii) of the planet’s center
+ 0.25 R$_H$ of the planet’s center
  \item Jupiter formation: 2.5–3 Myr (with protoplanetary disk's solid surface density of 10 g.cm$^{-2}$ \& dust opacity in
 protoplanet’s envelope of 2\% that of interstellar material)
 \item Jupiter mass planets are more coomon: circumstellar disks dimensionless viscosity of $a \simeq 4 \times 10 ^{-4}$, if the parameter $a$ was $10 \times$ larger, this would generate more massive giants than Jupiter.
