@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Exoplanetary research}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Schools of thought about formation}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}Core-nucleated instability}{3}{section.2}
-\contentsline {section}{\numberline {3}Fragmentation during collapse}{4}{section.3}
-\contentsline {section}{\numberline {4}Giant gravitational instability in disk}{5}{section.4}
-\contentsline {section}{\numberline {5}Conclusions}{6}{section.5}
-\contentsline {section}{\numberline {6}Assignment details}{7}{section.6}
