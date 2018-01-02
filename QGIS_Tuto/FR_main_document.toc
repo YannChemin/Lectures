@@ -2,7 +2,7 @@
 \contentsline {section}{INTRODUCTION QGIS}{1}{section*.3}
 \contentsline {section}{LE PLUGIN GRASS DANS LE SIG QUANTUM}{4}{section*.4}
 \contentsline {subsection}{TRAITEMENT DE DONNEES AVEC LE PLUGIN GRASS}{7}{section*.5}
-\contentsline {chapter}{Manuel pour le SIG GRASS}{11}{section*.6}
+\contentsline {chapter}{Manipulations spatiales}{11}{section*.6}
 \contentsline {section}{Introduction}{11}{section*.7}
 \contentsline {section}{MANIPULATIONS DE DEM}{12}{section*.8}
 \contentsline {subsection}{Calcul de pente et d'aspect}{12}{section*.9}
