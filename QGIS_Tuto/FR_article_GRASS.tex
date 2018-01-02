@@ -11,115 +11,7 @@
 
 \maketitle
 
-\section{Introduction}
-
-Cette capture d'\'ecran est le SIG GRASS en version original sous Windows (Fig.~\ref{fig:grass000})
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.12]{grass000.png}
-   %caption of the figure
-   \caption{GRASS en version original sous Windows}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass000}
-\end{figure}
-
-Lancer le SIG GRASS: S\'electionnez la Location Spearfish60 et cliquez sur
-``Enter GRASS'':Fig.~\ref{fig:grass001}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.3]{grass001.png}
-   %caption of the figure
-   \caption{Ecran d'acceuil}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass001}
-\end{figure}
-
-A ce moment cel\`a devrait ressembler \`a: Fig.~\ref{fig:grass002}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass002.png}
-   %caption of the figure
-   \caption{Gestionnaire du SIG}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass002}
-\end{figure}
-
-Plus d'information sur le GUI se trouve dans l'appendice A \ref{appendixA}.
-
-Chargez la couche elevation.10m en cliquant sur le bouton de d'affichage raster (second bouton \`a partir de gauche):Fig.~\ref{fig:grass003}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.5]{grass003.png}
-   %caption of the figure
-   \caption{Affichage \'el\'ementaire}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass003}
-\end{figure}
-
-Une fois s\'electionn\'e, l'interface d'utilisation de GRASS aura une nouvelle couche comme cell-ci:Fig.~\ref{fig:grass004}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass004.png}
-   %caption of the figure
-   \caption{}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass004}
-\end{figure}
-
-En s\'electionnant la nouvelle couche, vous aurez acc\`es \`a un menu contextuel comme ceci:Fig.~\ref{fig:grass005}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass005.png}
-   %caption of the figure
-   \caption{}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass005}
-\end{figure}
-
-Ajoutez une couche vectorielle en utilisant la 8\`eme ic\^one \`a partir de la gauche. Fig.~\ref{fig:grass006}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.5]{grass006.png}
-   %caption of the figure
-   \caption{}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass006}
-\end{figure}
-
-Ajoutez une couche vectorielle "stream" (de couleur bleue) et "road" de couleur amrron. Ci-dessous est l'exemple pour "stream" Fig.~\ref{fig:grass007}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.45]{grass007.png}
-   %caption of the figure
-   \caption{}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass007}
-\end{figure}
-
-Le r\'esultat devrait \^etre comme ceci (plus ou moins):Fig.~\ref{fig:grass008}
+La carte actuelle devrait \^etre comme ceci (plus ou moins):Fig.~\ref{fig:grass008}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -127,13 +19,13 @@ Le r\'esultat devrait \^etre comme ceci (plus ou moins):Fig.~\ref{fig:grass008}
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
    \includegraphics[scale=0.35]{grass008.png}
    %caption of the figure
-   \caption{}
+   \caption{carte de travail pour cette section}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass008}
 \end{figure}
 
 \section{MANIPULATIONS DE DEM}
-Affichage du dem:Fig.~\ref{fig:grass009}
+Affichage du DEM en des\'electionnant les vecteurs roads et streams Fig.~\ref{fig:grass009}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -147,7 +39,7 @@ Affichage du dem:Fig.~\ref{fig:grass009}
 \end{figure}
 
 \subsection{Calcul de pente et d'aspect}
-Raster/Terrain Analysis/Slope and Aspect. Fig.~\ref{fig:grass010}
+Dans GRASS Tools, dans Region, changez la r\'esolution et mettez la \`a 10m x 10m. Puis recherchez r.slope, utilisez le avec la couche ``elevation.10m'', la carte d'aspect a \'et\'e pr\'epar\'ee \`a la fin de la section pr\'ec\'edente Fig.~\ref{fig:grass010}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -160,7 +52,7 @@ Raster/Terrain Analysis/Slope and Aspect. Fig.~\ref{fig:grass010}
    \label{fig:grass010}
 \end{figure}
 
-Calcul de carte de relief ombrag\'e ( prenez Raster/Terrain Analysis/Shaded Relief Map).
+Calcul de carte de relief ombrag\'e ( cherchez r.relief ou ``shaded'' ).
 La carte de relief ombrag\'e devrait \^etre comme ceci quand la carte "elevation.10m" est superimpos\'ee dessus avec une opacit\'e de 0.75: Fig.~\ref{fig:grass011}
 
 %\setkeys{Gin}{width=1\textwidth}
@@ -175,7 +67,7 @@ La carte de relief ombrag\'e devrait \^etre comme ceci quand la carte "elevation
 \end{figure}
 
 \subsection{Programme d'analyse de basin versant}
-Raster/Hydrologic modeling/Watershed Analysis.
+Trouvez r.watershed.\\
 Remplissezs les param\`etres d'entr\'e de la carte d'altitude avec ``elevation.10m''. La taille minimum de l'ext\'erieur d'un bassin versant doit \^etre de 5000 pixels. Remplissez les param\`etres de sortie pour toutes les cartes disponibles (i.e. ``\_cells\_nbr'', ``\_drain\_dir'', ``\_drain\_dir'', ``\_basins'', ``\_streams'', ``\_half\_basins'', ``\_visual'', ``\_LS'', ``\_S'').
 
 Voici ce que doit dire l' ex\'ecution du module:
