@@ -39,7 +39,7 @@ Affichage du DEM en des\'electionnant les vecteurs roads et streams Fig.~\ref{fi
 \end{figure}
 
 \subsection{Calcul de pente et d'aspect}
-Dans GRASS Tools, dans Region, changez la r\'esolution et mettez la \`a 10m x 10m. Puis recherchez r.slope, utilisez le avec la couche ``elevation.10m'', la carte d'aspect a \'et\'e pr\'epar\'ee \`a la fin de la section pr\'ec\'edente Fig.~\ref{fig:grass010}
+Dans GRASS Tools, dans Region, changez la r\'esolution et mettez la \`a 10m x 10m. Puis recherchez r.slope, utilisez le avec la couche ''elevation.10m'', la carte d'aspect a \'et\'e pr\'epar\'ee \`a la fin de la section pr\'ec\'edente Fig.~\ref{fig:grass010}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -52,7 +52,7 @@ Dans GRASS Tools, dans Region, changez la r\'esolution et mettez la \`a 10m x 10
    \label{fig:grass010}
 \end{figure}
 
-Calcul de carte de relief ombrag\'e ( cherchez r.relief ou ``shaded'' ).
+Calcul de carte de relief ombrag\'e (cherchez r.relief ou ''shaded'' ).
 La carte de relief ombrag\'e devrait \^etre comme ceci quand la carte "elevation.10m" est superimpos\'ee dessus avec une opacit\'e de 0.75: Fig.~\ref{fig:grass011}
 
 %\setkeys{Gin}{width=1\textwidth}
@@ -68,7 +68,7 @@ La carte de relief ombrag\'e devrait \^etre comme ceci quand la carte "elevation
 
 \subsection{Programme d'analyse de basin versant}
 Trouvez r.watershed.\\
-Remplissezs les param\`etres d'entr\'e de la carte d'altitude avec ``elevation.10m''. La taille minimum de l'ext\'erieur d'un bassin versant doit \^etre de 5000 pixels. Remplissez les param\`etres de sortie pour toutes les cartes disponibles (i.e. ``\_cells\_nbr'', ``\_drain\_dir'', ``\_drain\_dir'', ``\_basins'', ``\_streams'', ``\_half\_basins'', ``\_visual'', ``\_LS'', ``\_S'').
+Remplissezs les param\`etres d'entr\'e de la carte d'altitude avec ''elevation.10m''. La taille minimum de l'ext\'erieur d'un bassin versant doit \^etre de 5000 pixels. Remplissez les param\`etres de sortie pour toutes les cartes disponibles (i.e. ''\_cells\_nbr'', ''\_drain\_dir'', ''\_drain\_dir'', ''\_basins'', ''\_streams'', ''\_half\_basins'', ''\_visual'', ''\_LS'', ''\_S'').
 
 Voici ce que doit dire l' ex\'ecution du module:
 
@@ -86,7 +86,7 @@ SECTION 5: Watershed determination.
 
 SECTION 6: Closing Maps.
 
-La carte r\'esultante ``\_basins'' devrait ressembler \`a cel\`a:Fig.~\ref{fig:grass012}
+La carte r\'esultante ''\_basins'' devrait ressembler \`a cel\`a:Fig.~\ref{fig:grass012}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -100,7 +100,7 @@ La carte r\'esultante ``\_basins'' devrait ressembler \`a cel\`a:Fig.~\ref{fig:g
 \end{figure}
 
 
-La carte r\'esultante ``\_streams'' devrait ressembler \`a cel\`a: Fig.~\ref{fig:grass013} comparez-l\`a avec la carte vectorielle ``streams''.
+La carte r\'esultante ''\_streams'' devrait ressembler \`a cel\`a: Fig.~\ref{fig:grass013} comparez-l\`a avec la carte vectorielle ''streams''.
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -114,14 +114,11 @@ La carte r\'esultante ``\_streams'' devrait ressembler \`a cel\`a: Fig.~\ref{fig
 \end{figure}
 
 Relancez avec des valuers diff\'erentes au lieu de 5000 pixels, i.e. 2000 et 10000.
-Comparez en vectorisant les r\'eseaux hydrologiques g\'en\'er\'es. La vectorisation suit ces \'etapes:
-1-Raster/Neighborhood Analysis/Thin Linear Features
-2-File/Map Type Conversion/Raster to Vector Map
-3-Vector/Develop Map/Create-Rebuild Topology (optional)
+Comparez en vectorisant les r\'eseaux hydrologiques g\'en\'er\'es. La vectorisation se fait en cherchant ''v.out.'' dans GRASS Tools.
 
 \subsection{Identification de site de station de suivit de la Pollution d'un ruisseau}
 En consid\'erant qu'une usine de transformation/traitement de bois fasse une demande de permis pour mettre en place une nouvelle usine dans le basin versant. La localisation est distante du r\'eseau hydrologique majeur cartographi\'e (598713.35(E) 4920069.15(N)), le conseil local vous a employ\'e pour \'evaluer le chemin de quelques effluents mineurs qui pourraient se retrouver dans le r\'eseau majeur \`a partir de l'usine qui va \^etre install\'ee, et sp\'ecialement leurs coordonn\'ees g\'eographiques du point de rencontre o\`u le conseil va mettre en place une station de suivit automatique.
-Utilisez Raster/Terrain Analysis/Least Cost Route Or Flow, v\^otre r\'esultat devrait ressembler a cel\`a: Fig.~\ref{fig:grass014}
+Recherchez Least Cost Route Or Flow (r.drain), v\^otre r\'esultat devrait ressembler a cel\`a: Fig.~\ref{fig:grass014}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -134,24 +131,20 @@ Utilisez Raster/Terrain Analysis/Least Cost Route Or Flow, v\^otre r\'esultat de
    \label{fig:grass014}
 \end{figure}
 
-Quelle est la localisation (Est,Nord) du chemin hydrologique g\'en\'er\'e rejoignant la rivi\`ere cartographi\'ee, et donc lieu propos\'e pour installer une station de suivit?
+Quelle est la localisation (Est,Nord) du chemin hydrologique g\'en\'er\'ee rejoignant la rivi\`ere cartographi\'ee, et donc lieu propos\'e pour installer une station de suivit?
 
-\section{Analyse d'habitat avec le SIG GRASS}
+\section{Analyse d'habitat}
 \subsection{Introduction}
 
-http://www.udel.edu/johnmack/frec682/682proj2.html
-
-Ce cours est disponible en ligne sous le nom ``FREC 682 Spatial Analysis''. Ce mat\'eriel a \'et\'e modifi\'e pour r\'epondre aux changements venant avec GRASS  version 6.3 et additionnelles.
-
 Dans cette session, les \'el\'ements dont vous aurez besoins sont essentiellement (regardez dans la partie RASTER de l'interface principale): 
-Le module BUFFERING:   Raster/Create buffers Fig.~\ref{fig:grass015}
-Le module MAP CALCULATOR:   Raster/Map Calculator Fig.~\ref{fig:grass016}
+Le module BUFFERING (r.buffer) Fig.~\ref{fig:grass015}
+Le module MAP CALCULATOR (r.mapcalc) Fig.~\ref{fig:grass016}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
    \centering
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass015.png}
+   \includegraphics[scale=0.2]{grass015.png}
    %caption of the figure
    \caption{BUFFERING}
    %label of the figure, which has to correspond to \ref{}:
@@ -162,101 +155,33 @@ Le module MAP CALCULATOR:   Raster/Map Calculator Fig.~\ref{fig:grass016}
 \begin{figure}[htbp]
    \centering
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass016.png}
+   \includegraphics[scale=0.2]{grass016.png}
    %caption of the figure
    \caption{MAP CALCULATOR}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass016}
 \end{figure}
 
-Certains modules additionnels pour plus tard
-
-Questionner une carte avec la souris:   
-Dans la fen\^etre d'affichage, cherchez:   Fig.~\ref{fig:grass017}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=1]{grass017.png}
-   %caption of the figure
-   \caption{Questionner une carte avec la souris}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass017}
-\end{figure}
-
-Valeurs NULL dans les cartes: Raster/Develop Map/Manage Null values
-
-CLUMP: Raster/Transform features/Clump small Areas
-
-STATISTIQUES: Raster/Reports \& Statistics = General statistics
-
-R2V: File/Map type Conversions/Raster to vector
-
-Construction Vectorielle: Vector/Develop Map/Create/Rebuild Topology
-
-Export Vectoriel: File/Export/Vector map/Various format using OGR (SHAPE, etc)
-
-Lanc\'e une nouvelle fen\^etre:
-Dans l'interface principal de GRASS, cherchez :    Fig.~\ref{fig:grass018}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=1]{grass018.png}
-   %caption of the figure
-   \caption{Lanacer une nouvelle fen\^etre d'affichage}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass018}
-\end{figure}
-
-Effacer l'affichage:
-Dans la fen\^etre d'affichage, cherchez:   Fig.~\ref{fig:grass019}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=1]{grass019.png}
-   %caption of the figure
-   \caption{Ic\^one d'effacement d'affichage}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass019}
-\end{figure}
-
-Redessiner la carte:
-Dans la fen\^etre d'affichage, cherchez:   Fig.~\ref{fig:grass020}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=1]{grass020.png}
-   %caption of the figure
-   \caption{Ic\^one de redessinage}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass020}
-\end{figure}
-
 \subsection{MISSION DE PRESERVATION D'UN HABITAT}
-La Trollopensus bibulosa a recemment \'et\'e ajout\'ee sur la liste des esp\`eces en danger, et le service en charge de la faune sauvage est en train d'identifier des habitats probables dans la zone sp\'eciale de Spearfish pour prot\'eger contre le d\'eveloppement. Ils ont construit le syst\`emes de points suivant pour cet habitat bas\'e sur les statistiques de pr\'ef\'erences des esp\`eces observ\'ees:
+La Sturnella idemia a r\'ecemment \'et\'e ajout\'ee sur la liste des esp\`eces en danger, et le service en charge de la faune sauvage est en train d'identifier des habitats probables dans la zone sp\'eciale de Spearfish pour prot\'eger contre le d\'eveloppement. Ils ont construit le syst\`emes de points suivant pour cet habitat bas\'e sur les statistiques de pr\'ef\'erences des esp\`eces observ\'ees:
 
 \subsection{SYSTEME DE POINTS POUR L'HABITAT (venant du service de la faune sauvage) }
 
-Num\'ero de carte Conditions environnementales Score \`a donner
-1 dans 500 m\`etres d'un cours d'eau o\` la pente <= 5 degr\'es +2 points
-2 dans 500 m\`etres d'un cours d'eau o\` la pente >5 degr\'es +5 points
-3 dans 500 m\`etres d'une route -5 points
-4 for\^et de conif\`eres +4 points
-5 for\^et mixte +1 point
-6 exposition au Nord (aspect de NO \`a NE) +3 points
-7 exposition \`a l'Ouest ou l'Est (SO au NO ou SE to NE) +1 point
-8 1200-1400 m\`etres d'altitude +2 points
-9 1400-1600 m\`etres d'altitude +4 points
-10 over 1600 m\`etres d'altitude +2 points
+Num\'ero de carte suivie des conditions environnementales recherch\'ees et enfin les points a donner.
+\begin{enumerate}
+\item dans 500 m\`etres d'un cours d'eau o\`u la pente <= 5 degr\'es (+2 points)
+\item dans 500 m\`etres d'un cours d'eau o\`u la pente >5 degr\'es (+5 points)
+\item dans 500 m\`etres d'une route (-5 points)
+\item for\^et de conif\`eres (+4 points)
+\item for\^et mixte (+1 point)
+\item exposition au Nord (aspect de NO \`a NE) (+3 points)
+\item exposition \`a l'Ouest ou l'Est (SO au NO ou SE to NE) (+1 point)
+\item 1200-1400 m\`etres d'altitude (+2 points)
+\item 1400-1600 m\`etres d'altitude (+4 points)
+\item over 1600 m\`etres d'altitude (+2 points)
+\end{enumerate}
 
-Utilisez r.buffer (..=> Create buffers) et r.mapcalc (..=> Map calculator) pour cr\'eer une carte de score d'habitat pour toute la zone, en additionnant tous les scores partiels comme d\'efinis ci-dessus. (conseil: vous devez convertir toutes les valuers nulles des cartes de r\'esultats de buffer en valuers z\'ero)
+Utilisez r.buffer et r.mapcalc (Map calculator) pour cr\'eer une carte de score d'habitat pour toute la zone, en additionnant tous les scores partiels comme d\'efinis ci-dessus. (conseil: vous devez convertir toutes les valuers nulles des cartes de r\'esultats de buffer en valuers z\'ero)
 Quand vous serez termin\'e avec les cartes 1 \`a 10 ci-dessus, additionnez-les toutes en une seule carte que vous pourriez appeler "scoreindivsum". Ensuite, identifiez une zone d'habitat souhaitable en convertissant les valeurs z\'ero des pixels pour tout r\'esultat inf\'erieur \`a 9, et tout pixel dans les 100 m\`etres d'une route (conseil: vous devz faire une nouvelle carte de buffer ici, et enlever ses valeurs nulles pour les calculs). Faites une carte finale que vous pourriez appeler "scorefinal" et changez en les valeurs z\'ero en NULL (..=>Manage null values) pour atteindre la prochaine partie de cet exercice.
 
 \subsection{PREPARATION DES CARTES DE SCORE}
@@ -269,29 +194,38 @@ Dans le cas d'une carte:
 \begin{smallverbatim}
 if(CarteA==valeur1, score_valeur1, score_valeur2)
 \end{smallverbatim}
-Dans le cas ou deux cartes sont utilis\'ees ensemble, un syst\`eme conditionnel double peut \^etre d\'ecrit comme ceci:
+Dans le cas ou deux cartes sont utilis\'ees ensemble, un syst\`eme conditionnel double peut \^etre d\'ecrit comme ceci:\\
 
-Un exemple pratique pour la carte num\'ero 1:
+\noindent Un exemple pratique pour la carte num\'ero 1:
 \begin{smallverbatim}
 if(stream_buff_500==2,if(slope=5,2,0),0)
 \end{smallverbatim}
-Dans le cas o\'u l'on voudrait s\'electionner une gamme de valeurs (inclusive ou exclusive), utilisez les op\'erants "OR" et "AND". Questionnez la carte d'aspect (..=>Query with mouse), Est=1 et Nord=+90 degr\'es.
-
-Exemples practiques pour 7a et 7b:
+\smallskip
+\noindent Vous pouvez ouvrir le GRASS SHELL dans GRASS Tools et entrer cet exemple directement.
 \begin{smallverbatim}
-7a) if(aspect<225 && aspect>135, 1, 0)
-
-7b) if(aspect<45 || aspect>314 && aspect!=0, 1, 0)
+r.mapcalc expression="_carte1=if(stream_buff_500==2
+          ,if(slope=5,2,0),0)"
 \end{smallverbatim}
-L'exemple 7b a une contrainte additionnelle ``\&\& aspect !=0'' car la valeur d'aspect 0 veut dire pas d'aspect calcul\'e (g\'en\'eralement en dehors de la zone de donn\'ees de l'image).
 
-Ce jeu d'instructions montre comment le SIG GRASS produit une reclassification en mode "script". Ceci devient tr\`es utile quand vous avez besoin de r\'e-utiliser une analyse SIG complex plusieurs fois de suite sur d'autre jeux de donn\'ees par exemple.
+\noindent Dans le cas o\'u l'on voudrait s\'electionner une gamme de valeurs (inclusive ou exclusive), utilisez les op\'erants "OR" et "AND". Questionnez la carte d'aspect (..=>Query with mouse), Est=1 et Nord=+90 degr\'es.\\
+
+\noindent Exemples practiques pour 7a et 7b:
+\begin{smallverbatim}
+7a) r.mapcalc expression="_carte7a=if(aspect<225 
+          && aspect>135, 1, 0)"
+
+7b) r.mapcalc expression="_carte7b=if(aspect<45 ||
+          aspect>314 && aspect!=0, 1, 0)"
+\end{smallverbatim}
+L'exemple 7b a une contrainte additionnelle ''\&\& aspect !=0'' car la valeur d'aspect 0 veut dire pas d'aspect calcul\'e (g\'en\'eralement en dehors de la zone de donn\'ees de l'image).
+
+\noindent Ce jeu d'instructions montre comment le SIG GRASS produit une reclassification en mode "script". Ceci devient tr\`es utile quand vous avez besoin de r\'e-utiliser une analyse SIG compl\`exe plusieurs fois de suite sur d'autre jeux de donn\'ees par exemple. Pour ce`a il vous suffit simplement d'enregistrer les lignes de commandes dans un fichier texte.
 
 \subsection{HABITAT SCORING SCRIPT}
 
 Num\'ero de carte Conditions environnementales Score \`a donner:
 
-\textbf{
+\noindent \textbf{
 1) Dans 500 m\`etres des cours d'eau o\`u la pente <= 5 degr\'es: +2 points}
 \begin{smallverbatim}
 r.buffer input=streams output=_bstreams500
@@ -299,72 +233,80 @@ r.buffer input=streams output=_bstreams500
 
 r.null map=_bstreams500 null=0
 
-r.mapcalc _rbstreams500="if(_bstreams500==2,1,0)"
+r.mapcalc expression="_rbstreams500=
+if(_bstreams500==2,1,0)"
 
 r.null map=_rbstreams500 null=0
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 2) Dans 500 m\`etres des cours d'eau o\`u la pente >5 degr\'es: +5 points}
 \begin{smallverbatim}
-r.buffer input=roads output=_broads500 distances=500
- units=meters --overwrite
+r.buffer input=roads output=_broads500 
+distances=500 units=meters --overwrite
 
-r.mapcalc _s_sl="if(_rbstreams500==1,if(
- slope<=5,2,5),0)"
+r.mapcalc expression="_s_sl=
+if(_rbstreams500==1,if(slope<=5,2,5),0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 3) Dans 500 m\`etres d'une route: -5 points}
 \begin{smallverbatim}
-r.mapcalc _rbroads500="float(if(
- _broads500==2,-5.0,0))"
+r.mapcalc expression="_rbroads500=
+float(if(_broads500==2,-5.0,0))"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 4) for\^et de conif\`eres: +4 points}
 \begin{smallverbatim}
-r.mapcalc _for="if(vegcover==3,4,0)"
+r.mapcalc expression="_for=
+if(vegcover==3,4,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 5) for\^et mixte: +1 point}
 \begin{smallverbatim}
-r.mapcalc _for1="if(vegcover==5,1,0)"
+r.mapcalc expression="_for1=
+if(vegcover==5,1,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 6) Exposition Nord (aspect de NO \`a NE): +3 points}
 \begin{smallverbatim}
-r.mapcalc _exp3="if(aspect<=135.0 && aspect>=45.0
+r.mapcalc expression="_exp3=
+"if(aspect<=135.0 && aspect>=45.0
  && aspect != 0,3,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 7a) Exposition Ouest ou Est (SO \`a NO ou SE \`a NE): +1 point}
 \begin{smallverbatim}
-r.mapcalc _exp1="if(aspect<45.0 || aspect>314.0,1,0)"
-r.mapcalc _exp2="if(aspect<225.0 && aspect>135.0,1,0)"
+r.mapcalc expression="_exp1=
+if(aspect<45.0 || aspect>314.0,1,0)"
+
+r.mapcalc expression="_exp2=
+"if(aspect<225.0 && aspect>135.0,1,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 7b) 1200-1400 m\`etres d'altitude: +2 points}
 \begin{smallverbatim}
-r.mapcalc _elev1="if(elevation.10m<1400
- && elevation.10m>1200,2,0)"
+r.mapcalc expression="_elev1=
+if(elevation.10m<1400 && elevation.10m>1200,2,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 8) 1400-1600 m\`etres d'altitude: +4 points}
 \begin{smallverbatim}
-r.mapcalc _elev2="if(elevation.10m<1600
- && elevation.10m>=1400,4,0)"
+r.mapcalc expression="_elev2=
+if(elevation.10m<1600 && elevation.10m>=1400,4,0)"
 \end{smallverbatim}
 
-\textbf{
+\noindent \textbf{
 9) plus de 1600 m\`etres d'altitude: +2 points}
 \begin{smallverbatim}
-r.mapcalc _elev3="if(elevation.10m>=1600,2,0)"
+r.mapcalc expression="_elev3=
+if(elevation.10m>=1600,2,0)"
 \end{smallverbatim}
 
 \subsection{FINALISATION DE LA CARTE DE SCORE}
@@ -375,12 +317,14 @@ r.buffer input=roads output=_br100
 
 r.null map=_br100 null=0
 
-r.mapcalc _add="float(_s_sl+_rbroads500+_for+
+r.mapcalc expression="_add=
+float(_s_sl+_rbroads500+_for+
  _for1+_exp1+_exp2+_exp3+_elev1+_elev2+_elev3)"
 
-r.mapcalc _clas="if(_add>9,1,null())"
+r.mapcalc expression="_clas=if(_add>9,1,null())"
 
-r.mapcalc _class="if(_clas==1&&_br100==0,1,null())"
+r.mapcalc expression="_class=
+if(_clas==1&&_br100==0,1,null())"
 \end{smallverbatim}
 
 %\setkeys{Gin}{width=1\textwidth}
@@ -395,19 +339,18 @@ r.mapcalc _class="if(_clas==1&&_br100==0,1,null())"
 \end{figure}
 
 \subsection{METTRE EN BLOC LES ZONES SOUHAITABLES}
-ATTENTION: Cette partie demande l'utilisation du prompt/terminal avec des commandes en ligne.
 
-Qu'est-ce que ``mettre en bloc''?
-Re-cat\'egoriser les donn\'ees dans une carte raster en groupant les pixels qui form des surfaces continues physiquement en d'uniques cat\'egories.
+Qu'est-ce que ''mettre en bloc''?
+Re-cat\'egoriser les donn\'ees dans une carte raster en groupant les pixels qui forment des surfaces continues physiquement en d'uniques cat\'egories.
 
 Maintenant, trouvez les zones discr\`etes/continues (ou clumps) des scores d'aggr\'egation d'habitat. 
-Lancez \textit{r.clump (..=>Clump Small Areas) }sur la carte ``\textit{score\_final}'' pour donner \`a chaque bloc son propre num\'ero de cat\'egorie. Vous pourriez appeler la carte r\'esultante ``\textit{score\_clumped}''.
+Lancez \textit{r.clump (Cherchez: Clump Small Areas) }sur la carte ''\textit{score\_final}'' pour donner \`a chaque bloc son propre num\'ero de cat\'egorie. Vous pourriez appeler la carte r\'esultante ''\textit{score\_clumped}''.
 
 \begin{smallverbatim}
 r.clump input=score_final output=score_clumped 
 \end{smallverbatim}
 
-Affichez votre nouvelle carte de blocs ``\textit{score\_clumped}''. Elle devrait plus ou moins ressembler \`a cel\`a:Fig.~\ref{fig:grass022}
+Affichez votre nouvelle carte de blocs ''\textit{score\_clumped}''. Elle devrait plus ou moins ressembler \`a cel\`a:Fig.~\ref{fig:grass022}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -428,7 +371,7 @@ r.reclass.area input = score_final greater=50
  output=selected_habitat_area
 \end{smallverbatim}
 
-R\'esultat ``selected\_habitat\_area'' \`a ce niveau devrait \^etre similaire \`a ceci:Fig.~\ref{fig:grass023}
+R\'esultat ''selected\_habitat\_area'' \`a ce niveau devrait \^etre similaire \`a ceci:Fig.~\ref{fig:grass023}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -444,7 +387,7 @@ R\'esultat ``selected\_habitat\_area'' \`a ce niveau devrait \^etre similaire \`
 \subsection{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}
 Puisque nos clients travaillent sous SIG \`a format vectoriel, nous allons convertir les r\'esultats en format vectoriel et les exporter de GRASS \`a ESRI shapefile.
 
-Vectorisez larte de blocs que vous venez de produire (File/Map type conversion/raster to vector) et v\'erifiez que vous avez effectivement cr\'ee une carte vectorielle \`a \'el\'ements de type polygones en affichant votre couche vectorielle avec des couleurs al\'eatoires.Fig.~\ref{fig:grass024}
+Vectorisez la carte de blocs que vous venez de produire (Recherchez ''conversion'' dans GRASS Tools) et v\'erifiez que vous avez effectivement cr\'ee une carte vectorielle \`a \'el\'ements de type polygones en affichant votre couche vectorielle. Fig.~\ref{fig:grass024}
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -457,7 +400,7 @@ Vectorisez larte de blocs que vous venez de produire (File/Map type conversion/r
    \label{fig:grass024}
 \end{figure}
 
-Exportez ce fichier vectoriel d'habitat avec ``\textit{roads}'' et ``\textit{streams}'' aussi en format shapefile. Soyez s\^ur que vous exportez le m\^eme type d'\'el\'ements vectoriels (area pour ``\textit{selected\_habitat\_area}'' et lines pour ``\textit{roads}'' et ``\textit{streams}''). Affichez et questionnez ces fichiers dans le SIG Quantum.
+Exportez ce fichier vectoriel d'habitat avec ''\textit{roads}'' et ''\textit{streams}'' aussi en format shapefile. Soyez s\^ur que vous exportez le m\^eme type d'\'el\'ements vectoriels (area pour ''\textit{selected\_habitat\_area}'' et lines pour ''\textit{roads}'' et ''\textit{streams}''). Affichez et questionnez ces fichiers dans le SIG Quantum.
 
 \begin{smallverbatim}
 v.out.ogr input=selected_habitat_area type=area
@@ -470,68 +413,35 @@ v.out.ogr input=streams type=line dsn=QGISDATA
  layer=1 format=ESRI_Shapefile
 \end{smallverbatim}
 
-Bonus de traitement de donn\'ees.....
+\noindent \textbf{Pour les t\'em\'eraires ...}
 
-Cette esp\`ece est assez intol\'erante des perturbations aux fronti\`eres de zones, donc vous devriez faire un poids plus lourd pour les zones internes que frontali\`eres des blocs d'habitat. Cr\'eez des buffers internes concentriques de 100 m\`etres pour chaque bloc, avec un poids de 1 pour le premier buffer en fronti\`ere (0-100 m\`etres internes), 2 pour le second vers l'interieur (100-200 m\`etres), 3 pour 200-300 m\`etres, etc..., quand aux pixels en dehors des blocs, leurs valeurs sont de z\'ero.
+Cette esp\`ece est assez intol\'erante des perturbations aux fronti\`eres de zones, donc vous devriez faire un poids plus lourd pour les zones internes que frontali\`eres des blocs d'habitat. \\
+Cr\'eez des buffers internes concentriques de 100 m\`etres pour chaque bloc, avec un poids de 
+\begin{enumerate}
+\item pour le premier buffer en fronti\`ere (0-100 m\`etres internes), 
+\item pour le second vers l'interieur (100-200 m\`etres), 3 pour 200-300 m\`etres, etc..., 
+\item quand aux pixels en dehors des blocs, leurs valeurs sont de z\'ero.
+\end{enumerate}
 
-Utilisez \textit{r.mapcalc} pour multiplier la carte d'habitat par les poids des buffers internes.
-Maintenant lancez \textit{r.volume }sur cette carte r\'esultante pour obtenir la somme et la moyenne de chaque bloc.
-Utilisez  \textit{awk} pour cr\'eer des fichiers de r\`egles de r\'eclassification, puis utilisez \textit{r.reclass} pour cartographier les blocs par somme et moyenne.
-Quel bloc a le nouveau total maximum? Lequel a la nouvelle moyenne maximum?
-Utilisez \textit{r.grow} pour cr\'eer une carte de fronti\`eres de blocs (soustraire les cartes d'origines aux cartes r\'esultantes).
-Utilisez les cartes de fronti\`eres de blocs pour indexer le p\'erimetre de chaque bloc majeur. 
-Calculez la compacit\'e (surface divis\'ee par le carr\'e du p\'erimetre) de chaque bloc. 
-Cartographiez les blocs par compacit\'e. Cr\'eez un script d'affichage cool pour d\'emontrer vos proc\'edures et expliquez ce que vous avez trouv\'e.
-(Pour cel\`a voyez: \href{http://www.udel.edu/johnmack/frec682/script_ideas.html})
+\noindent Pour cel\`a:
 
-Un script de quelques pqrties de cet exercice est dans l'\textbf{Appendice B} \ref{appendixB}.
+\begin{enumerate}
+\item Utilisez \textit{r.mapcalc} pour multiplier la carte d'habitat par les poids des buffers internes.
+\item Maintenant lancez \textit{r.volume }sur cette carte r\'esultante pour obtenir la somme et la moyenne de chaque bloc.
+\item Utilisez  \textit{awk} pour cr\'eer des fichiers de r\`egles de r\'eclassification, puis utilisez \textit{r.reclass} pour cartographier les blocs par somme et moyenne.
+\item Quel bloc a le nouveau total maximum? Lequel a la nouvelle moyenne maximum?
+\item Utilisez \textit{r.grow} pour cr\'eer une carte de fronti\`eres de blocs (soustraire les cartes d'origines aux cartes r\'esultantes).
+\item Utilisez les cartes de fronti\`eres de blocs pour indexer le p\'erimetre de chaque bloc majeur. 
+\item Calculez la compacit\'e (surface divis\'ee par le carr\'e du p\'erimetre) de chaque bloc. 
+\item Cartographiez les blocs par compacit\'e. 
+\item Cr\'eez un script d'affichage cool pour d\'emontrer vos proc\'edures et expliquez ce que vous avez trouv\'e.
+\end{enumerate}
 
-\newpage
+\subsection{Exemple de script}
 
-\subsection{Appendice A: SUrvol de l'interface principale de GRASS}
-\label{appendixA}
-
-Survol des commandes disponibles dans les modules:Fig.~\ref{fig:grass025} Fig.~\ref{fig:grass026} Fig.~\ref{fig:grass027}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.4]{grass025.png}
-   %caption of the figure
-   \caption{GRASS Menus (1/3)}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass025}
-\end{figure}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.4]{grass026.png}
-   %caption of the figure
-   \caption{GRASS Menus (2/3)}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass026}
-\end{figure}
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.4]{grass027.png}
-   %caption of the figure
-   \caption{GRASS Menus (3/3)}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass027}
-\end{figure}
-
-\newpage
-
-\subsection{Appendice B: SCRIPT dans GRASS}
-\label{appendixB}
-
-Veuillez mettre ceci dans un fichier \textit{script.sh}\textup{et dans un }\textit{Terminal}\textup{ \'ecrivez: ``chmod 0755}\textit{script.sh''}\textup{. Ensuite vous pouvez lancer le script }en \'ecrivant la commande: ``./script.sh''.
+\noindent Veuillez mettre ceci dans un fichier \textit{script.sh} \textup{et dans un } \textit{Terminal} \textup{ \'ecrivez: ''chmod 0755} \textit{script.sh''}\textup{. Ensuite vous pouvez lancer le script } en \'ecrivant la commande: ''./script.sh'' (Linux/Mac). \\
+\noindent Ce script utilise une veille version de r.mapcalc, convertissez les lignes de commande en utilisant la forme \textit{r.mapcalc expression=''carte=carte1+carte2''}. \\
+\noindent Ce script contient des commandes d'affichage automatique des nouvelles cartes, ces commandes (d.mon, d.rast, d.vect) ne fonctionneront pas dans l'interface de QGIS car elles sont natives seulement de GRASS GIS. 
 
 \begin{smallverbatim}
 #!/bin/bash
@@ -546,46 +456,46 @@ _br=_broads500
 _rbs=_rbstreams500
 _rbr=_rbroads500
 #--------------------------------------------------
-# Pr\'esentation g\'en\'erale: D\'ebut Affichage 0
+# Presentation generale: Debut Affichage 0
 #--------------------------------------------------
 d.mon start=x0
 d.erase color=grey
-d.rast map=\$dem
+d.rast map=$dem
 sleep 1
-d.vect map=\$r color=brown
+d.vect map=$r color=brown
 sleep 1
-d.vect map=\$s color=blue
+d.vect map=$s color=blue
 sleep 1
 d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 2
 #--------------------------------------------------
-# Cr\'eation de buffer: D\'ebut Affichage 1
+# Creation de buffer: Debut Affichage 1
 #--------------------------------------------------
 d.mon start=x1
 d.mon select=x1
 d.erase color=grey
-r.buffer input=\$s output=\$_bs distances=500
+r.buffer input=$s output=$_bs distances=500
  units=meters --overwrite
-r.null map=\$_bs null=0
-d.rast map=\$_bs
-d.vect map=\$s color=blue
+r.null map=$_bs null=0
+d.rast map=$_bs
+d.vect map=$s color=blue
 d.barscale bcolor=white tcolor=black at=30.0,95.0
-r.buffer input=\$r output=\$_br distances=500
+r.buffer input=$r output=$_br distances=500
  units=meters --overwrite
-r.null map=\$_br null=0
-d.rast map=\$_br
-d.vect map=\$s color=blue
+r.null map=$_br null=0
+d.rast map=$_br
+d.vect map=$s color=blue
 d.barscale bcolor=white tcolor=black at=30.0,95.0
 #--------------------------------------------------
-# Reclassification: D\'ebut Affichage 2
+# Reclassification: Debut Affichage 2
 #--------------------------------------------------
 d.mon start=x2
 d.mon select=x2
 d.erase color=grey
 echo "...Reclassification..."
-r.mapcalc \$_rbs="if(\$_bs==2,1,0)"
-r.mapcalc _s_sl="if(\$_rbs==1,if(slope<=5,2,5),0)"
-r.mapcalc \$_rbr="float(if(\$_br==2,-5.0,0))"
+r.mapcalc $_rbs="if($_bs==2,1,0)"
+r.mapcalc _s_sl="if($_rbs==1,if(slope<=5,2,5),0)"
+r.mapcalc $_rbr="float(if($_br==2,-5.0,0))"
 r.mapcalc _for="if(vegcover==3,4,0)"
 r.mapcalc _for1="if(vegcover==5,1,0)"
 r.mapcalc _exp1="if(aspect<45.0 || aspect>314.0 &&
@@ -594,22 +504,22 @@ r.mapcalc _exp2="if(aspect<225.0 && aspect>135.
  0,1,0)"
 r.mapcalc _exp3="if(aspect<=135.0 && aspect>=45.0,
  3,0)"
-r.mapcalc _elev1="if(\$dem<1400 &&\$dem>1200,2,0)"
-r.mapcalc _elev2="if(\$dem<1600 &&\$dem>=1400,4,0)"
-r.mapcalc _elev3="if(\$dem>=1600,2,0)"
+r.mapcalc _elev1="if($dem<1400 && $dem>1200,2,0)"
+r.mapcalc _elev2="if($dem<1600 && $dem>=1400,4,0)"
+r.mapcalc _elev3="if($dem>=1600,2,0)"
 #--------------------------------------------------
-r.buffer input=\$r output=_br100 distances=100
+r.buffer input=$r output=_br100 distances=100
  units=meters --overwrite
-r.null map=\_br100 null=0
-r.mapcalc _add="float(_s_sl+\$_rbr+_for+_for1+
+r.null map=_br100 null=0
+r.mapcalc _add="float(_s_sl+$_rbr+_for+_for1+
  _exp1+_exp2+_exp3+_elev1+_elev2+_elev3)"
 r.mapcalc _clas="if(_add{>9,1,null())"
 r.mapcalc _class="if(_clas==1&&_br100==0,1,null())"
 echo "Reclassification...Fin."
-d.rast map="\$_rbs"
+d.rast map="$_rbs"
 sleep 1
 d.rast map="_s_sl"
-d.rast map="\$_rbr"
+d.rast map="$_rbr"
 d.rast map="_for"
 d.rast map="_for1"
 d.rast map="_exp1"
@@ -626,23 +536,23 @@ sleep 1
 d.rast map="_class"
 sleep 1
 #d.erase
-d.vect map="\$s" color=blue
-d.vect map="\$r" color=brown
+d.vect map="$s" color=blue
+d.vect map="$r" color=brown
 d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 5
 g.remove
-rast="\$_rbs,_s_sl,\$_rbr,_for,_for1"}
+rast="$_rbs,_s_sl,$_rbr,_for,_for1"}
 g.remove
 rast="_exp1,_exp2,_exp3,_elev1"}
 g.remove
 rast="_elev2,_elev3,_br100,_add"}
-g.remove rast="\$_bs,\$_br,_clas"}
+g.remove rast="$_bs,$_br,_clas"}
 sleep 1
 echo ""
 echo "fin"
 sleep 1
 #--------------------------------------------------
-# Mettre en bloc: D\'ebut Affichage 3
+# Mettre en bloc: Debut Affichage 3
 #--------------------------------------------------
 d.mon start=x3
 d.mon select=x3
@@ -664,7 +574,7 @@ d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 1
 g.remove rast="_clump,_class"
 #--------------------------------------------------
-# R2V et Export: D\'ebut Affichage 4
+# R2V et Export: Debut Affichage 4
 #--------------------------------------------------
 d.mon start=x4
 d.mon select=x4
@@ -687,9 +597,9 @@ d.mon stop=x1
 d.mon stop=x0
 \end{smallverbatim}
 
-\address{GRASS Development Team\\
-  \url{http://grass.osgeo.org}\\
-  \email{grass-web@lists.osgeo.org}}
+%\address{Yann Chemin\\
+%  \url{http://grass.osgeo.org}\\
+ % \email{yann.chemin@gmail.com}}
 
 %%% Local Variables: 
 %%% mode: latex

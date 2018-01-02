@@ -7,7 +7,7 @@
 \BOOKMARK [2][-]{section*.8}{Calcul de pente et d'aspect}{section*.7}% 7
 \BOOKMARK [2][-]{section*.9}{Programme d'analyse de basin versant}{section*.7}% 8
 \BOOKMARK [2][-]{section*.10}{Identification de site de station de suivit de la Pollution d'un ruisseau}{section*.7}% 9
-\BOOKMARK [1][-]{section*.11}{Analyse d'habitat avec le SIG GRASS}{section*.6}% 10
+\BOOKMARK [1][-]{section*.11}{Analyse d'habitat}{section*.6}% 10
 \BOOKMARK [2][-]{section*.12}{Introduction}{section*.11}% 11
 \BOOKMARK [2][-]{section*.13}{MISSION DE PRESERVATION D'UN HABITAT}{section*.11}% 12
 \BOOKMARK [2][-]{section*.14}{SYSTEME DE POINTS POUR L'HABITAT \(venant du service de la faune sauvage\) }{section*.11}% 13
@@ -16,5 +16,4 @@
 \BOOKMARK [2][-]{section*.17}{FINALISATION DE LA CARTE DE SCORE}{section*.11}% 16
 \BOOKMARK [2][-]{section*.18}{METTRE EN BLOC LES ZONES SOUHAITABLES}{section*.11}% 17
 \BOOKMARK [2][-]{section*.19}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{section*.11}% 18
-\BOOKMARK [2][-]{section*.20}{Appendice A: SUrvol de l'interface principale de GRASS}{section*.11}% 19
-\BOOKMARK [2][-]{section*.21}{Appendice B: SCRIPT dans GRASS}{section*.11}% 20
+\BOOKMARK [2][-]{section*.20}{Exemple de script}{section*.11}% 19
