@@ -203,7 +203,7 @@ if(stream_buff_500==2,if(slope=5,2,0),0)
 \smallskip
 \noindent Vous pouvez ouvrir le GRASS SHELL dans GRASS Tools et entrer cet exemple directement.
 \begin{smallverbatim}
-r.mapcalc expression="_carte1=if(stream_buff_500==2
+r.mapcalc expression="carte1=if(stream_buff_500==2
           ,if(slope=5,2,0),0)"
 \end{smallverbatim}
 
@@ -211,10 +211,10 @@ r.mapcalc expression="_carte1=if(stream_buff_500==2
 
 \noindent Exemples practiques pour 7a et 7b:
 \begin{smallverbatim}
-7a) r.mapcalc expression="_carte7a=if(aspect<225 
+7a) r.mapcalc expression="carte7a=if(aspect<225 
           && aspect>135, 1, 0)"
 
-7b) r.mapcalc expression="_carte7b=if(aspect<45 ||
+7b) r.mapcalc expression="carte7b=if(aspect<45 ||
           aspect>314 && aspect!=0, 1, 0)"
 \end{smallverbatim}
 L'exemple 7b a une contrainte additionnelle ''\&\& aspect !=0'' car la valeur d'aspect 0 veut dire pas d'aspect calcul\'e (g\'en\'eralement en dehors de la zone de donn\'ees de l'image).
@@ -228,52 +228,52 @@ Num\'ero de carte Conditions environnementales Score \`a donner:
 \noindent \textbf{
 1) Dans 500 m\`etres des cours d'eau o\`u la pente <= 5 degr\'es: +2 points}
 \begin{smallverbatim}
-r.buffer input=streams output=_bstreams500
+r.buffer input=streams output=bstreams500
  distances=500 units=meters --overwrite
 
-r.null map=_bstreams500 null=0
+r.null map=bstreams500 null=0
 
-r.mapcalc expression="_rbstreams500=
+r.mapcalc expression="rbstreams500=
 if(_bstreams500==2,1,0)"
 
-r.null map=_rbstreams500 null=0
+r.null map=rbstreams500 null=0
 \end{smallverbatim}
 
 \noindent \textbf{
 2) Dans 500 m\`etres des cours d'eau o\`u la pente >5 degr\'es: +5 points}
 \begin{smallverbatim}
-r.buffer input=roads output=_broads500 
+r.buffer input=roads output=broads500 
 distances=500 units=meters --overwrite
 
-r.mapcalc expression="_s_sl=
-if(_rbstreams500==1,if(slope<=5,2,5),0)"
+r.mapcalc expression="s_sl=
+if(rbstreams500==1,if(slope<=5,2,5),0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 3) Dans 500 m\`etres d'une route: -5 points}
 \begin{smallverbatim}
-r.mapcalc expression="_rbroads500=
+r.mapcalc expression="rbroads500=
 float(if(_broads500==2,-5.0,0))"
 \end{smallverbatim}
 
 \noindent \textbf{
 4) for\^et de conif\`eres: +4 points}
 \begin{smallverbatim}
-r.mapcalc expression="_for=
+r.mapcalc expression="for=
 if(vegcover==3,4,0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 5) for\^et mixte: +1 point}
 \begin{smallverbatim}
-r.mapcalc expression="_for1=
+r.mapcalc expression="for1=
 if(vegcover==5,1,0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 6) Exposition Nord (aspect de NO \`a NE): +3 points}
 \begin{smallverbatim}
-r.mapcalc expression="_exp3=
+r.mapcalc expression="exp3=
 "if(aspect<=135.0 && aspect>=45.0
  && aspect != 0,3,0)"
 \end{smallverbatim}
@@ -281,50 +281,50 @@ r.mapcalc expression="_exp3=
 \noindent \textbf{
 7a) Exposition Ouest ou Est (SO \`a NO ou SE \`a NE): +1 point}
 \begin{smallverbatim}
-r.mapcalc expression="_exp1=
+r.mapcalc expression="exp1=
 if(aspect<45.0 || aspect>314.0,1,0)"
 
-r.mapcalc expression="_exp2=
+r.mapcalc expression="exp2=
 "if(aspect<225.0 && aspect>135.0,1,0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 7b) 1200-1400 m\`etres d'altitude: +2 points}
 \begin{smallverbatim}
-r.mapcalc expression="_elev1=
+r.mapcalc expression="elev1=
 if(elevation.10m<1400 && elevation.10m>1200,2,0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 8) 1400-1600 m\`etres d'altitude: +4 points}
 \begin{smallverbatim}
-r.mapcalc expression="_elev2=
+r.mapcalc expression="elev2=
 if(elevation.10m<1600 && elevation.10m>=1400,4,0)"
 \end{smallverbatim}
 
 \noindent \textbf{
 9) plus de 1600 m\`etres d'altitude: +2 points}
 \begin{smallverbatim}
-r.mapcalc expression="_elev3=
+r.mapcalc expression="elev3=
 if(elevation.10m>=1600,2,0)"
 \end{smallverbatim}
 
 \subsection{FINALISATION DE LA CARTE DE SCORE}
 
 \begin{smallverbatim}
-r.buffer input=roads output=_br100
+r.buffer input=roads output=br100
  distances=100 units=meters --overwrite
 
-r.null map=_br100 null=0
+r.null map=br100 null=0
 
-r.mapcalc expression="_add=
-float(_s_sl+_rbroads500+_for+
- _for1+_exp1+_exp2+_exp3+_elev1+_elev2+_elev3)"
+r.mapcalc expression="add=
+float(s_sl+rbroads500+for+
+ for1+exp1+exp2+exp3+elev1+elev2+elev3)"
 
-r.mapcalc expression="_clas=if(_add>9,1,null())"
+r.mapcalc expression="clas=if(add>9,1,null())"
 
-r.mapcalc expression="_class=
-if(_clas==1&&_br100==0,1,null())"
+r.mapcalc expression="class=
+if(clas==1&&br100==0,1,null())"
 \end{smallverbatim}
 
 %\setkeys{Gin}{width=1\textwidth}
@@ -449,16 +449,18 @@ Cr\'eez des buffers internes concentriques de 100 m\`etres pour chaque bloc, ave
 dem=elevation.dem
 r=roads
 s=streams
+#Set resolution and extents from elevation.10m
+d.region raster=$dem
 # buffer cours d'eau et routes
-_bs=_bstreams500
-_br=_broads500
+_bs=bstreams500
+_br=broads500
 # reclassement des buffer cours d'eau et routes
-_rbs=_rbstreams500
-_rbr=_rbroads500
+_rbs=rbstreams500
+_rbr=rbroads500
 #--------------------------------------------------
 # Presentation generale: Debut Affichage 0
 #--------------------------------------------------
-d.mon start=x0
+d.mon start=wx0
 d.erase color=grey
 d.rast map=$dem
 sleep 1
@@ -471,8 +473,8 @@ sleep 2
 #--------------------------------------------------
 # Creation de buffer: Debut Affichage 1
 #--------------------------------------------------
-d.mon start=x1
-d.mon select=x1
+d.mon start=wx1
+d.mon select=wx1
 d.erase color=grey
 r.buffer input=$s output=$_bs distances=500
  units=meters --overwrite
@@ -489,51 +491,51 @@ d.barscale bcolor=white tcolor=black at=30.0,95.0
 #--------------------------------------------------
 # Reclassification: Debut Affichage 2
 #--------------------------------------------------
-d.mon start=x2
-d.mon select=x2
+d.mon start=wx2
+d.mon select=wx2
 d.erase color=grey
 echo "...Reclassification..."
-r.mapcalc $_rbs="if($_bs==2,1,0)"
-r.mapcalc _s_sl="if($_rbs==1,if(slope<=5,2,5),0)"
-r.mapcalc $_rbr="float(if($_br==2,-5.0,0))"
-r.mapcalc _for="if(vegcover==3,4,0)"
-r.mapcalc _for1="if(vegcover==5,1,0)"
-r.mapcalc _exp1="if(aspect<45.0 || aspect>314.0 &&
+r.mapcalc expression="$_rbs=if($_bs==2,1,0)"
+r.mapcalc expression="s_sl=if($_rbs==1,if(slope<=5,2,5),0)"
+r.mapcalc expression="$_rbr=float(if($_br==2,-5.0,0))"
+r.mapcalc expression="for=if(vegcover==3,4,0)"
+r.mapcalc expression="for1=if(vegcover==5,1,0)"
+r.mapcalc expression="exp1=if(aspect<45.0 || aspect>314.0 &&
  aspect != 0.0,1,0)"
-r.mapcalc _exp2="if(aspect<225.0 && aspect>135.
+r.mapcalc expression="exp2=if(aspect<225.0 && aspect>135.
  0,1,0)"
-r.mapcalc _exp3="if(aspect<=135.0 && aspect>=45.0,
+r.mapcalc expression="exp3=if(aspect<=135.0 && aspect>=45.0,
  3,0)"
-r.mapcalc _elev1="if($dem<1400 && $dem>1200,2,0)"
-r.mapcalc _elev2="if($dem<1600 && $dem>=1400,4,0)"
-r.mapcalc _elev3="if($dem>=1600,2,0)"
+r.mapcalc expression="elev1=if($dem<1400 && $dem>1200,2,0)"
+r.mapcalc expression="elev2=if($dem<1600 && $dem>=1400,4,0)"
+r.mapcalc expression="elev3=if($dem>=1600,2,0)"
 #--------------------------------------------------
-r.buffer input=$r output=_br100 distances=100
+r.buffer input=$r output=br100 distances=100
  units=meters --overwrite
-r.null map=_br100 null=0
-r.mapcalc _add="float(_s_sl+$_rbr+_for+_for1+
- _exp1+_exp2+_exp3+_elev1+_elev2+_elev3)"
-r.mapcalc _clas="if(_add{>9,1,null())"
-r.mapcalc _class="if(_clas==1&&_br100==0,1,null())"
+r.null map=br100 null=0
+r.mapcalc expression="add=float(s_sl+$_rbr+for+for1+
+ exp1+exp2+exp3+elev1+elev2+elev3)"
+r.mapcalc expression="clas=if(add{>9,1,null())"
+r.mapcalc expression="class=if(clas==1&&br100==0,1,null())"
 echo "Reclassification...Fin."
 d.rast map="$_rbs"
 sleep 1
-d.rast map="_s_sl"
+d.rast map="s_sl"
 d.rast map="$_rbr"
-d.rast map="_for"
-d.rast map="_for1"
-d.rast map="_exp1"
-d.rast map="_exp2"
-d.rast map="_exp3"
-d.rast map="_elev1"
-d.rast map="_elev2"
-d.rast map="_elev3"
-d.rast map="_br100"
+d.rast map="for"
+d.rast map="for1"
+d.rast map="exp1"
+d.rast map="exp2"
+d.rast map="exp3"
+d.rast map="elev1"
+d.rast map="elev2"
+d.rast map="elev3"
+d.rast map="br100"
 sleep 1
-#r.colors color=grey map="_add"
-d.rast map="_add"
+#r.colors color=grey map="add"
+d.rast map="add"
 sleep 1
-d.rast map="_class"
+d.rast map="class"
 sleep 1
 #d.erase
 d.vect map="$s" color=blue
@@ -541,12 +543,12 @@ d.vect map="$r" color=brown
 d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 5
 g.remove
-rast="$_rbs,_s_sl,$_rbr,_for,_for1"}
+rast="$_rbs,s_sl,$_rbr,for,for1"}
 g.remove
-rast="_exp1,_exp2,_exp3,_elev1"}
+rast="exp1,exp2,exp3,elev1"}
 g.remove
-rast="_elev2,_elev3,_br100,_add"}
-g.remove rast="$_bs,$_br,_clas"}
+rast="elev2,elev3,br100,add"}
+g.remove rast="$_bs,$_br,clas"}
 sleep 1
 echo ""
 echo "fin"
@@ -554,32 +556,32 @@ sleep 1
 #--------------------------------------------------
 # Mettre en bloc: Debut Affichage 3
 #--------------------------------------------------
-d.mon start=x3
-d.mon select=x3
+d.mon start=wx3
+d.mon select=wx3
 d.erase color=grey
-g.remove rast=_clump.clump._rclumpnew
-r.clump input=_class output=_clump --overwrite
-r.colors color=gyr map="_clump"
-d.rast map="_clump"
+g.remove rast=clump.clump._rclumpnew
+r.clump input=class output=clump --overwrite
+r.colors color=gyr map="clump"
+d.rast map="clump"
 sleep 1
-r.reclass.area input=_clump greater=50
- output=_rclumpnew --overwrite
-r.colors color=gyr map="_rclumpnew"
+r.reclass.area input=clump greater=50
+ output=rclumpnew --overwrite
+r.colors color=gyr map="rclumpnew"
 d.erase color=white
-d.rast map="_rclumpnew"
+d.rast map="rclumpnew"
 sleep 1
 d.vect map="streams" color=blue
 d.vect map="roads" color=brown
 d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 1
-g.remove rast="_clump,_class"
+g.remove rast="clump,class"
 #--------------------------------------------------
 # R2V et Export: Debut Affichage 4
 #--------------------------------------------------
-d.mon start=x4
-d.mon select=x4
+d.mon start=wx4
+d.mon select=wx4
 d.erase color=white
-r.to.vect -s input=_rclumpnew output=rclump
+r.to.vect -s input=rclumpnew output=rclump
  feature=area --overwrite
 d.vect -c map=rclump type=area color=black
 d.vect map="streams" color=blue
@@ -588,13 +590,13 @@ d.barscale bcolor=white tcolor=black at=30.0,95.0
 sleep 1
 v.out.ogr input=rclump type=area dsn=QGISDATA
  layer=1 format=ESRI_Shapefile --overwrite
-g.remove rast="_rclumpnew"
+g.remove rast="rclumpnew"
 g.remove vect="rclump"
-d.mon stop=x4
-d.mon stop=x3
-d.mon stop=x2
-d.mon stop=x1
-d.mon stop=x0
+d.mon stop=wx4
+d.mon stop=wx3
+d.mon stop=wx2
+d.mon stop=wx1
+d.mon stop=wx0
 \end{smallverbatim}
 
 %\address{Yann Chemin\\
