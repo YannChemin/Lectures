@@ -4,18 +4,20 @@
 \BOOKMARK [1][-]{section*.5}{TRAITEMENT DE DONNEES AVEC LE PLUGIN GRASS}{section*.2}% 4
 \BOOKMARK [0][-]{section*.6}{Manuel pour GPS dans QGIS}{}% 5
 \BOOKMARK [1][-]{section*.7}{GEOPAPARAZZI}{section*.6}% 6
-\BOOKMARK [0][-]{section*.8}{Manipulations spatiales}{}% 7
-\BOOKMARK [1][-]{section*.9}{MANIPULATIONS DE DEM}{section*.8}% 8
-\BOOKMARK [2][-]{section*.10}{Calcul de pente et d'aspect}{section*.9}% 9
-\BOOKMARK [2][-]{section*.11}{Programme d'analyse de basin versant}{section*.9}% 10
-\BOOKMARK [2][-]{section*.12}{Identification de site de station de suivit de la Pollution d'un ruisseau}{section*.9}% 11
-\BOOKMARK [1][-]{section*.13}{Analyse d'habitat}{section*.8}% 12
-\BOOKMARK [2][-]{section*.14}{Introduction}{section*.13}% 13
-\BOOKMARK [2][-]{section*.15}{MISSION DE PRESERVATION D'UN HABITAT}{section*.13}% 14
-\BOOKMARK [2][-]{section*.16}{SYSTEME DE POINTS POUR L'HABITAT \(venant du service de la faune sauvage\) }{section*.13}% 15
-\BOOKMARK [2][-]{section*.17}{PREPARATION DES CARTES DE SCORE}{section*.13}% 16
-\BOOKMARK [2][-]{section*.18}{HABITAT SCORING SCRIPT}{section*.13}% 17
-\BOOKMARK [2][-]{section*.19}{FINALISATION DE LA CARTE DE SCORE}{section*.13}% 18
-\BOOKMARK [2][-]{section*.20}{METTRE EN BLOC LES ZONES SOUHAITABLES}{section*.13}% 19
-\BOOKMARK [2][-]{section*.21}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{section*.13}% 20
-\BOOKMARK [2][-]{section*.22}{Exemple de script}{section*.13}% 21
+\BOOKMARK [1][-]{section*.8}{EXERCICE 1}{section*.6}% 7
+\BOOKMARK [1][-]{section*.9}{EXERCICE 2}{section*.6}% 8
+\BOOKMARK [0][-]{section*.10}{Manipulations spatiales}{}% 9
+\BOOKMARK [1][-]{section*.11}{MANIPULATIONS DE DEM}{section*.10}% 10
+\BOOKMARK [2][-]{section*.12}{Calcul de pente et d'aspect}{section*.11}% 11
+\BOOKMARK [2][-]{section*.13}{Programme d'analyse de basin versant}{section*.11}% 12
+\BOOKMARK [2][-]{section*.14}{Identification de site de station de suivit de la Pollution d'un ruisseau}{section*.11}% 13
+\BOOKMARK [1][-]{section*.15}{Analyse d'habitat}{section*.10}% 14
+\BOOKMARK [2][-]{section*.16}{Introduction}{section*.15}% 15
+\BOOKMARK [2][-]{section*.17}{MISSION DE PRESERVATION D'UN HABITAT}{section*.15}% 16
+\BOOKMARK [2][-]{section*.18}{SYSTEME DE POINTS POUR L'HABITAT \(venant du service de la faune sauvage\) }{section*.15}% 17
+\BOOKMARK [2][-]{section*.19}{PREPARATION DES CARTES DE SCORE}{section*.15}% 18
+\BOOKMARK [2][-]{section*.20}{HABITAT SCORING SCRIPT}{section*.15}% 19
+\BOOKMARK [2][-]{section*.21}{FINALISATION DE LA CARTE DE SCORE}{section*.15}% 20
+\BOOKMARK [2][-]{section*.22}{METTRE EN BLOC LES ZONES SOUHAITABLES}{section*.15}% 21
+\BOOKMARK [2][-]{section*.23}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{section*.15}% 22
+\BOOKMARK [2][-]{section*.24}{Exemple de script}{section*.15}% 23
