@@ -6,18 +6,19 @@
 \contentsline {section}{GEOPAPARAZZI}{11}{section*.7}
 \contentsline {section}{EXERCICE 1}{12}{section*.8}
 \contentsline {section}{EXERCICE 2}{13}{section*.9}
-\contentsline {chapter}{Manipulations spatiales}{15}{section*.10}
-\contentsline {section}{MANIPULATIONS DE DEM}{15}{section*.11}
-\contentsline {subsection}{Calcul de pente et d'aspect}{15}{section*.12}
-\contentsline {subsection}{Programme d'analyse de basin versant}{15}{section*.13}
-\contentsline {subsection}{Identification de site de station de suivit de la Pollution d'un ruisseau}{16}{section*.14}
-\contentsline {section}{Analyse d'habitat}{16}{section*.15}
-\contentsline {subsection}{Introduction}{16}{section*.16}
-\contentsline {subsection}{MISSION DE PRESERVATION D'UN HABITAT}{17}{section*.17}
-\contentsline {subsection}{SYSTEME DE POINTS POUR L'HABITAT (venant du service de la faune sauvage) }{17}{section*.18}
-\contentsline {subsection}{PREPARATION DES CARTES DE SCORE}{17}{section*.19}
-\contentsline {subsection}{HABITAT SCORING SCRIPT}{18}{section*.20}
-\contentsline {subsection}{FINALISATION DE LA CARTE DE SCORE}{18}{section*.21}
-\contentsline {subsection}{METTRE EN BLOC LES ZONES SOUHAITABLES}{18}{section*.22}
-\contentsline {subsection}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{19}{section*.23}
-\contentsline {subsection}{Exemple de script}{20}{section*.24}
+\contentsline {section}{IMPORT DANS QGIS}{14}{section*.10}
+\contentsline {chapter}{Manipulations spatiales}{16}{section*.11}
+\contentsline {section}{MANIPULATIONS DE DEM}{16}{section*.12}
+\contentsline {subsection}{Calcul de pente et d'aspect}{16}{section*.13}
+\contentsline {subsection}{Programme d'analyse de basin versant}{16}{section*.14}
+\contentsline {subsection}{Identification de site de station de suivit de la Pollution d'un ruisseau}{17}{section*.15}
+\contentsline {section}{Analyse d'habitat}{17}{section*.16}
+\contentsline {subsection}{Introduction}{17}{section*.17}
+\contentsline {subsection}{MISSION DE PRESERVATION D'UN HABITAT}{18}{section*.18}
+\contentsline {subsection}{SYSTEME DE POINTS POUR L'HABITAT (venant du service de la faune sauvage) }{18}{section*.19}
+\contentsline {subsection}{PREPARATION DES CARTES DE SCORE}{18}{section*.20}
+\contentsline {subsection}{HABITAT SCORING SCRIPT}{19}{section*.21}
+\contentsline {subsection}{FINALISATION DE LA CARTE DE SCORE}{19}{section*.22}
+\contentsline {subsection}{METTRE EN BLOC LES ZONES SOUHAITABLES}{19}{section*.23}
+\contentsline {subsection}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{20}{section*.24}
+\contentsline {subsection}{Exemple de script}{21}{section*.25}
