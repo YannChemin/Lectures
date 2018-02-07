@@ -676,7 +676,7 @@ Importez en utlisant r.in.gdal (Menu: File / import raster data / Common import 
    \label{fig:grass_rs002}
 \end{figure}
 
-Change the coloring of the bands R=3, G=2 and B=1 according to r.landsat.rgb:
+Changez les couleurs des couches R=3, G=2 et B=1 en fonction de r.landsat.rgb:
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -684,12 +684,12 @@ Change the coloring of the bands R=3, G=2 and B=1 according to r.landsat.rgb:
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
    \includegraphics[scale=0.35]{grass_rs003.png}
    %caption of the figure
-   \caption{Change RGB color table for Landsat}
+   \caption{Changez la table des couleurs RGB pour Landsat}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs003}
 \end{figure}
 
-Load a RGB combination of band 4,3,2 by clicking the 8th button from the left near to th raster loading button, select there the RGB map.
+Faire une combinaison RGB des couches 4,3,2 (i.landsat.rgb).
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -697,12 +697,12 @@ Load a RGB combination of band 4,3,2 by clicking the 8th button from the left ne
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
    \includegraphics[scale=0.45]{grass_rs004.png}
    %caption of the figure
-   \caption{Load a RGB band combination}
+   \caption{La combinaison RGB}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs004}
 \end{figure}
 
-Display the map (real color composite)
+Chargez la carte sur le canevas (real color composite)
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -710,25 +710,25 @@ Display the map (real color composite)
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
    \includegraphics[scale=0.35]{grass_rs005.png}
    %caption of the figure
-   \caption{Display the RGB real colour composite}
+   \caption{Chargez la carte RGB real colour composite}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs005}
 \end{figure}
 
-Change the coloring of the bands according to this (False Colour Composite).
+Changez la couleur des couches de cette facon (False Colour Composite).
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
    \centering
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass_rs006.png}
+   \includegraphics[scale=0.45]{grass_rs006.png}
    %caption of the figure
-   \caption{Load NIR-R-B colour combination)}
+   \caption{Chargez la combinaison NIR-R-B)}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs006}
 \end{figure}
 
-Display the map of the false color composite
+Chargez la carte de la false color composite
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
@@ -736,83 +736,33 @@ Display the map of the false color composite
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
    \includegraphics[scale=0.35]{grass_rs007.png}
    %caption of the figure
-   \caption{Display the RGB FCC}
+   \caption{Chargez la carte RGB FCC}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs007}
 \end{figure}
 
 \subsection{Classification}
-\label{classification}
+\label{Segmentation}
 
-Create a group and subgroup with band 1-5.
+Cr\'eez un groupe et un sous-groupe avec les couches 1-5.
 
 %\setkeys{Gin}{width=1\textwidth}
 \begin{figure}[htbp]
    \centering
    %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.45]{grass_rs008.png}
+   \includegraphics[scale=0.55]{grass_rs008.png}
    %caption of the figure
-   \caption{Create image group and subgroup}
+   \caption{Cr\'eez un groupe et un sous-groupe}
    %label of the figure, which has to correspond to \ref{}:
    \label{fig:grass_rs008}
 \end{figure}
 
-Create a signature file.
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass_rs009.png}
-   %caption of the figure
-   \caption{Create initial class statistics signature file}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass_rs009}
-\end{figure}
-
-See the convergence happening...
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass_rs010.png}
-   %caption of the figure
-   \caption{Convergence of statistics}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass_rs010}
-\end{figure}
-
-Run the Maximum Likelihood clustering classification.
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass_rs011.png}
-   %caption of the figure
-   \caption{Create initial class statistics signature file}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass_rs011}
-\end{figure}
-
-Display the result of unsupervised classification
-
-%\setkeys{Gin}{width=1\textwidth}
-\begin{figure}[htbp]
-   \centering
-   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
-   \includegraphics[scale=0.35]{grass_rs012.png}
-   %caption of the figure
-   \caption{Display classification result}
-   %label of the figure, which has to correspond to \ref{}:
-   \label{fig:grass_rs012}
-\end{figure}
+Cherchez et lancez i.segment sur ce groupe.
 
 \subsection{Map Algebra}
 \label{map_algebra}
 
-Using r.mapcalc, calculate the difference vegetation index (dvi), the Normalized dvi (ndvi) and the soil-adjusted vegetation index (savi). Then calculate some uncorrected Albedo and the temperature.
+Utilisez r.mapcalc, calculez le difference vegetation index (dvi), le normalized dvi (ndvi) et le soil-adjusted vegetation index (savi). Puis calculez une Albedo non-corrig\'ee et la temp\'erature.
 
 \begin{enumerate}
  \item dvi=(NIR-RED)
@@ -822,8 +772,7 @@ Using r.mapcalc, calculate the difference vegetation index (dvi), the Normalized
  \item temperature=1282.71 / (log ((666.09 / (band6)) + 1.0))
 \end{enumerate}
 
-Observe cities, roads, irrigation canals, rivers, wetlands, agricultural lands, forests and barren areas with each and all of these images, find out what defines best each land use.
-
+Observez les villes, routes, canaux d'irrigation, rivi\`eres, mar\'ecages, terres agricoles, for\^et et sol nu dans chacune de ces images, d\'efinissez chaque occupation du sol en valeurs de ces indices. Lancez i.segment avec ces indices seulement, retrouvez vous des occupations du sol?
 
 %\address{Yann Chemin\\
 %  \url{http://grass.osgeo.org}\\
