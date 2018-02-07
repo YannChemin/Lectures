@@ -599,6 +599,232 @@ d.mon stop=wx1
 d.mon stop=wx0
 \end{smallverbatim}
 
+
+\newpage
+\section{T\'el\'ed\'etection}
+\label{remote_sensing}
+
+\subsection{Import}
+\label{Import}
+
+Allez sur le site du GLCF pour se fournir en image Landsat pour votre site d'\'etude. 
+Regardez le Path et Row que vous avez besoin: \href{https://landsat.usgs.gov/sites/default/files/images/wrs2nb.gif}{landsat.usgs.gov/sites/default/files/images/wrs2nb.gif}.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.1]{wrs2nb}
+   %caption of the figure
+   \caption{WRS2 grid, Landsat Path \& Row}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:wrs2}
+\end{figure}
+
+Dans ce cas, c'est p092r084 pour l'an 2010 et le jour Julien 26, en Sud-Est Australien. Nous prenons un echantilllon g\'eographique avec ce script shell:
+
+\begin{smallverbatim}
+ #Decompress la tarball
+ tar xvf LE70920842010026ASN00.tar.gz
+ cd LE70920842010026ASN00/
+
+ #Sous-\'echantillonagede toutes les couches
+ for file in *.TIF
+   do gdalwarp -te 452274 -3855746 476447
+      -3839082 $file new$file
+   #D\'etruire silencieusement le fichier $file
+   rm -f $file
+ done
+\end{smallverbatim}
+
+Lancez GRASS GIS. Clicquez sur ``Location Wizard'', Cr\'eez votre nom de Location, cliquez ``Next'', puis cliquez sur la troisi\`eme option ``Read projection and datum terms for a georeferenced data file'' et s\'electionnez un des fichiers Landsat TIF. Puis suivez les instructions.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs000.png}
+   %caption of the figure
+   \caption{Lancez GRASS GIS}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs000}
+\end{figure}
+
+Au lancement, tapez ``landsat'' ou le nom que vous avez cr\'e\'e.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs001.png}
+   %caption of the figure
+   \caption{Mise en place d'une Location}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs001}
+\end{figure}
+
+Importez en utlisant r.in.gdal (Menu: File / import raster data / Common import formats).
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs002.png}
+   %caption of the figure
+   \caption{import avec r.in.gdal}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs002}
+\end{figure}
+
+Change the coloring of the bands R=3, G=2 and B=1 according to r.landsat.rgb:
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs003.png}
+   %caption of the figure
+   \caption{Change RGB color table for Landsat}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs003}
+\end{figure}
+
+Load a RGB combination of band 4,3,2 by clicking the 8th button from the left near to th raster loading button, select there the RGB map.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.45]{grass_rs004.png}
+   %caption of the figure
+   \caption{Load a RGB band combination}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs004}
+\end{figure}
+
+Display the map (real color composite)
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs005.png}
+   %caption of the figure
+   \caption{Display the RGB real colour composite}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs005}
+\end{figure}
+
+Change the coloring of the bands according to this (False Colour Composite).
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs006.png}
+   %caption of the figure
+   \caption{Load NIR-R-B colour combination)}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs006}
+\end{figure}
+
+Display the map of the false color composite
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs007.png}
+   %caption of the figure
+   \caption{Display the RGB FCC}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs007}
+\end{figure}
+
+\subsection{Classification}
+\label{classification}
+
+Create a group and subgroup with band 1-5.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.45]{grass_rs008.png}
+   %caption of the figure
+   \caption{Create image group and subgroup}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs008}
+\end{figure}
+
+Create a signature file.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs009.png}
+   %caption of the figure
+   \caption{Create initial class statistics signature file}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs009}
+\end{figure}
+
+See the convergence happening...
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs010.png}
+   %caption of the figure
+   \caption{Convergence of statistics}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs010}
+\end{figure}
+
+Run the Maximum Likelihood clustering classification.
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs011.png}
+   %caption of the figure
+   \caption{Create initial class statistics signature file}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs011}
+\end{figure}
+
+Display the result of unsupervised classification
+
+%\setkeys{Gin}{width=1\textwidth}
+\begin{figure}[htbp]
+   \centering
+   %name of your graphic, without the path AND in PNG (screnshots etc)/PDF (drawings) format:
+   \includegraphics[scale=0.35]{grass_rs012.png}
+   %caption of the figure
+   \caption{Display classification result}
+   %label of the figure, which has to correspond to \ref{}:
+   \label{fig:grass_rs012}
+\end{figure}
+
+\subsection{Map Algebra}
+\label{map_algebra}
+
+Using r.mapcalc, calculate the difference vegetation index (dvi), the Normalized dvi (ndvi) and the soil-adjusted vegetation index (savi). Then calculate some uncorrected Albedo and the temperature.
+
+\begin{enumerate}
+ \item dvi=(NIR-RED)
+ \item ndvi=dvi/(NIR+RED)
+ \item savi=((1+0.5)*dvi)/(NIR+RED+0.5)
+ \item Albedo=0.293*BLUE + 0.274*GREEN + 0.233*RED + 0.156*NIR + 0.033*band5 +0.011*band7
+ \item temperature=1282.71 / (log ((666.09 / (band6)) + 1.0))
+\end{enumerate}
+
+Observe cities, roads, irrigation canals, rivers, wetlands, agricultural lands, forests and barren areas with each and all of these images, find out what defines best each land use.
+
+
 %\address{Yann Chemin\\
 %  \url{http://grass.osgeo.org}\\
  % \email{yann.chemin@gmail.com}}

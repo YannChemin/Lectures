@@ -22,3 +22,7 @@
 \contentsline {subsection}{METTRE EN BLOC LES ZONES SOUHAITABLES}{19}{section*.23}
 \contentsline {subsection}{EXPORT DES RESULTATS SOUS FORMAT VECTORIEL}{20}{section*.24}
 \contentsline {subsection}{Exemple de script}{21}{section*.25}
+\contentsline {section}{T\'el\'ed\'etection}{23}{section*.26}
+\contentsline {subsection}{Import}{23}{section*.27}
+\contentsline {subsection}{Classification}{24}{section*.28}
+\contentsline {subsection}{Map Algebra}{25}{section*.29}
