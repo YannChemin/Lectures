@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.11)  14 JAN 2018 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.2)  5 FEB 2018 11:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **FR_main_document.tex
 (./FR_main_document.tex
 LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.16> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -168,7 +168,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
@@ -459,17 +459,13 @@ LaTeX Info: Redefining \nameref on input line 24.
 <./images/osgeo_logo.png, id=100, 360.34625pt x 117.43875pt>
 File: ./images/osgeo_logo.png Graphic file (type png)
 <use ./images/osgeo_logo.png>
-Package pdftex.def Info: ./images/osgeo_logo.png  used on input line 29. on inp
-ut line 29.
-Package pdftex.def Info: Requested size: 218.26033pt x 71.13188pt on input line
- 29.
+Package pdftex.def Info: ./images/osgeo_logo.png  used on input line 29.
+(pdftex.def)             Requested size: 218.26033pt x 71.13188pt.
 <./images/istom_logo.jpg, id=102, 399.4925pt x 242.9075pt>
 File: ./images/istom_logo.jpg Graphic file (type jpg)
 <use ./images/istom_logo.jpg>
-Package pdftex.def Info: ./images/istom_logo.jpg  used on input line 29. on inp
-ut line 29.
-Package pdftex.def Info: Requested size: 116.98366pt x 71.13188pt on input line
- 29.
+Package pdftex.def Info: ./images/istom_logo.jpg  used on input line 29.
+(pdftex.def)             Requested size: 116.98366pt x 71.13188pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
@@ -526,24 +522,18 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 <./images/qgis000.png, id=107, 1275.76625pt x 794.97pt>
 File: ./images/qgis000.png Graphic file (type png)
 <use ./images/qgis000.png>
-Package pdftex.def Info: ./images/qgis000.png  used on input line 23. on input 
-line 23.
-Package pdftex.def Info: Requested size: 229.62802pt x 143.08842pt on input lin
-e 23.
+Package pdftex.def Info: ./images/qgis000.png  used on input line 23.
+(pdftex.def)             Requested size: 229.62802pt x 143.08842pt.
 <./images/qgis001.png, id=109, 743.77875pt x 1094.0875pt>
 File: ./images/qgis001.png Graphic file (type png)
 <use ./images/qgis001.png>
-Package pdftex.def Info: ./images/qgis001.png  used on input line 36. on input 
-line 36.
-Package pdftex.def Info: Requested size: 223.13535pt x 328.22878pt on input lin
-e 36.
+Package pdftex.def Info: ./images/qgis001.png  used on input line 36.
+(pdftex.def)             Requested size: 223.13535pt x 328.22878pt.
 <./images/qgis002.png, id=111, 820.06375pt x 756.8275pt>
 File: ./images/qgis002.png Graphic file (type png)
 <use ./images/qgis002.png>
-Package pdftex.def Info: ./images/qgis002.png  used on input line 49. on input 
-line 49.
-Package pdftex.def Info: Requested size: 229.61629pt x 211.91025pt on input lin
-e 49.
+Package pdftex.def Info: ./images/qgis002.png  used on input line 49.
+(pdftex.def)             Requested size: 229.61629pt x 211.91025pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/osgeo_logo.png> <
@@ -552,10 +542,8 @@ e 49.
 <./images/qgis003.png, id=129, 1085.05376pt x 748.7975pt>
 File: ./images/qgis003.png Graphic file (type png)
 <use ./images/qgis003.png>
-Package pdftex.def Info: ./images/qgis003.png  used on input line 62. on input 
-line 62.
-Package pdftex.def Info: Requested size: 238.71255pt x 164.73595pt on input lin
-e 62.
+Package pdftex.def Info: ./images/qgis003.png  used on input line 62.
+(pdftex.def)             Requested size: 238.71255pt x 164.73595pt.
 
 Overfull \hbox (6.86414pt too wide) in paragraph at lines 62--64
  [][] 
@@ -564,10 +552,8 @@ Overfull \hbox (6.86414pt too wide) in paragraph at lines 62--64
 <./images/qgis004.png, id=131, 1240.635pt x 748.7975pt>
 File: ./images/qgis004.png Graphic file (type png)
 <use ./images/qgis004.png>
-Package pdftex.def Info: ./images/qgis004.png  used on input line 75. on input 
-line 75.
-Package pdftex.def Info: Requested size: 235.7231pt x 142.273pt on input line 7
-5.
+Package pdftex.def Info: ./images/qgis004.png  used on input line 75.
+(pdftex.def)             Requested size: 235.7231pt x 142.273pt.
 
 Overfull \hbox (3.87468pt too wide) in paragraph at lines 75--77
  [][] 
@@ -576,10 +562,8 @@ Overfull \hbox (3.87468pt too wide) in paragraph at lines 75--77
 <./images/qgis005.png, id=133, 1241.63875pt x 746.79pt>
 File: ./images/qgis005.png Graphic file (type png)
 <use ./images/qgis005.png>
-Package pdftex.def Info: ./images/qgis005.png  used on input line 88. on input 
-line 88.
-Package pdftex.def Info: Requested size: 248.32335pt x 149.35535pt on input lin
-e 88.
+Package pdftex.def Info: ./images/qgis005.png  used on input line 88.
+(pdftex.def)             Requested size: 248.32335pt x 149.35535pt.
 
 Overfull \hbox (16.47493pt too wide) in paragraph at lines 88--90
  [][] 
@@ -588,10 +572,8 @@ Overfull \hbox (16.47493pt too wide) in paragraph at lines 88--90
 <./images/qgis006.png, id=135, 1238.6275pt x 904.37875pt>
 File: ./images/qgis006.png Graphic file (type png)
 <use ./images/qgis006.png>
-Package pdftex.def Info: ./images/qgis006.png  used on input line 101. on input
- line 101.
-Package pdftex.def Info: Requested size: 247.72112pt x 180.87254pt on input lin
-e 101.
+Package pdftex.def Info: ./images/qgis006.png  used on input line 101.
+(pdftex.def)             Requested size: 247.72112pt x 180.87254pt.
 
 Overfull \hbox (15.8727pt too wide) in paragraph at lines 101--103
  [][] 
@@ -600,10 +582,8 @@ Overfull \hbox (15.8727pt too wide) in paragraph at lines 101--103
 <./images/qgis007.png, id=137, 1239.63126pt x 901.3675pt>
 File: ./images/qgis007.png Graphic file (type png)
 <use ./images/qgis007.png>
-Package pdftex.def Info: ./images/qgis007.png  used on input line 114. on input
- line 114.
-Package pdftex.def Info: Requested size: 247.92186pt x 180.2703pt on input line
- 114.
+Package pdftex.def Info: ./images/qgis007.png  used on input line 114.
+(pdftex.def)             Requested size: 247.92186pt x 180.2703pt.
 
 Overfull \hbox (16.07344pt too wide) in paragraph at lines 114--116
  [][] 
@@ -612,10 +592,8 @@ Overfull \hbox (16.07344pt too wide) in paragraph at lines 114--116
 <./images/qgis008.png, id=139, 1236.62pt x 901.3675pt>
 File: ./images/qgis008.png Graphic file (type png)
 <use ./images/qgis008.png>
-Package pdftex.def Info: ./images/qgis008.png  used on input line 127. on input
- line 127.
-Package pdftex.def Info: Requested size: 234.96024pt x 171.2616pt on input line
- 127.
+Package pdftex.def Info: ./images/qgis008.png  used on input line 127.
+(pdftex.def)             Requested size: 234.96024pt x 171.2616pt.
 
 Overfull \hbox (3.11182pt too wide) in paragraph at lines 127--129
  [][] 
@@ -626,10 +604,8 @@ es/qgis005.png> <./images/qgis006.png> <./images/qgis007.png>]
 <./images/qgis009.png, id=157, 1236.62pt x 812.03375pt>
 File: ./images/qgis009.png Graphic file (type png)
 <use ./images/qgis009.png>
-Package pdftex.def Info: ./images/qgis009.png  used on input line 140. on input
- line 140.
-Package pdftex.def Info: Requested size: 234.96024pt x 154.28801pt on input lin
-e 140.
+Package pdftex.def Info: ./images/qgis009.png  used on input line 140.
+(pdftex.def)             Requested size: 234.96024pt x 154.28801pt.
 
 Overfull \hbox (3.11182pt too wide) in paragraph at lines 140--142
  [][] 
@@ -638,10 +614,8 @@ Overfull \hbox (3.11182pt too wide) in paragraph at lines 140--142
 <./images/qgis010.png, id=159, 1236.62pt x 812.03375pt>
 File: ./images/qgis010.png Graphic file (type png)
 <use ./images/qgis010.png>
-Package pdftex.def Info: ./images/qgis010.png  used on input line 153. on input
- line 153.
-Package pdftex.def Info: Requested size: 234.96024pt x 154.28801pt on input lin
-e 153.
+Package pdftex.def Info: ./images/qgis010.png  used on input line 153.
+(pdftex.def)             Requested size: 234.96024pt x 154.28801pt.
 
 Overfull \hbox (3.11182pt too wide) in paragraph at lines 153--155
  [][] 
@@ -650,10 +624,8 @@ Overfull \hbox (3.11182pt too wide) in paragraph at lines 153--155
 <./images/qgis011.png, id=161, 1238.6275pt x 902.37125pt>
 File: ./images/qgis011.png Graphic file (type png)
 <use ./images/qgis011.png>
-Package pdftex.def Info: ./images/qgis011.png  used on input line 167. on input
- line 167.
-Package pdftex.def Info: Requested size: 235.34167pt x 171.45232pt on input lin
-e 167.
+Package pdftex.def Info: ./images/qgis011.png  used on input line 167.
+(pdftex.def)             Requested size: 235.34167pt x 171.45232pt.
 
 Overfull \hbox (3.49326pt too wide) in paragraph at lines 167--169
  [][] 
@@ -662,24 +634,18 @@ Overfull \hbox (3.49326pt too wide) in paragraph at lines 167--169
 <./images/qgis012.png, id=163, 937.5025pt x 858.20625pt>
 File: ./images/qgis012.png Graphic file (type png)
 <use ./images/qgis012.png>
-Package pdftex.def Info: ./images/qgis012.png  used on input line 181. on input
- line 181.
-Package pdftex.def Info: Requested size: 187.49718pt x 171.6382pt on input line
- 181.
+Package pdftex.def Info: ./images/qgis012.png  used on input line 181.
+(pdftex.def)             Requested size: 187.49718pt x 171.6382pt.
 <./images/qgis013.png, id=165, 941.5175pt x 862.22125pt>
 File: ./images/qgis013.png Graphic file (type png)
 <use ./images/qgis013.png>
-Package pdftex.def Info: ./images/qgis013.png  used on input line 195. on input
- line 195.
-Package pdftex.def Info: Requested size: 188.30016pt x 172.4412pt on input line
- 195.
+Package pdftex.def Info: ./images/qgis013.png  used on input line 195.
+(pdftex.def)             Requested size: 188.30016pt x 172.4412pt.
 <./images/qgis014.png, id=167, 896.34875pt x 140.525pt>
 File: ./images/qgis014.png Graphic file (type png)
 <use ./images/qgis014.png>
-Package pdftex.def Info: ./images/qgis014.png  used on input line 210. on input
- line 210.
-Package pdftex.def Info: Requested size: 233.04518pt x 36.53563pt on input line
- 210.
+Package pdftex.def Info: ./images/qgis014.png  used on input line 210.
+(pdftex.def)             Requested size: 233.04518pt x 36.53563pt.
 
 Overfull \hbox (1.19676pt too wide) in paragraph at lines 210--212
  [][] 
@@ -690,17 +656,13 @@ es/qgis011.png> <./images/qgis012.png> <./images/qgis013.png>]
 <./images/qgis015.png, id=184, 828.09375pt x 527.9725pt>
 File: ./images/qgis015.png Graphic file (type png)
 <use ./images/qgis015.png>
-Package pdftex.def Info: ./images/qgis015.png  used on input line 223. on input
- line 223.
-Package pdftex.def Info: Requested size: 231.86467pt x 147.83128pt on input lin
-e 223.
+Package pdftex.def Info: ./images/qgis015.png  used on input line 223.
+(pdftex.def)             Requested size: 231.86467pt x 147.83128pt.
 <./images/qgis016.png, id=186, 2822.545pt x 1768.6075pt>
 File: ./images/qgis016.png Graphic file (type png)
 <use ./images/qgis016.png>
-Package pdftex.def Info: ./images/qgis016.png  used on input line 237. on input
- line 237.
-Package pdftex.def Info: Requested size: 234.24963pt x 146.78088pt on input lin
-e 237.
+Package pdftex.def Info: ./images/qgis016.png  used on input line 237.
+(pdftex.def)             Requested size: 234.24963pt x 146.78088pt.
 
 Overfull \hbox (2.40121pt too wide) in paragraph at lines 237--239
  [][] 
@@ -712,54 +674,40 @@ LaTeX Warning: Reference `fig:qgis017' on page 4 undefined on input line 244.
 <./images/qgis017.png, id=187, 562.1pt x 454.69875pt>
 File: ./images/qgis017.png Graphic file (type png)
 <use ./images/qgis017.png>
-Package pdftex.def Info: ./images/qgis017.png  used on input line 250. on input
- line 250.
-Package pdftex.def Info: Requested size: 196.73795pt x 159.14694pt on input lin
-e 250.
+Package pdftex.def Info: ./images/qgis017.png  used on input line 250.
+(pdftex.def)             Requested size: 196.73795pt x 159.14694pt.
 <./images/qgis018.png, id=189, 2026.57124pt x 1535.7375pt>
 File: ./images/qgis018.png Graphic file (type png)
 <use ./images/qgis018.png>
-Package pdftex.def Info: ./images/qgis018.png  used on input line 263. on input
- line 263.
-Package pdftex.def Info: Requested size: 222.92352pt x 168.93164pt on input lin
-e 263.
+Package pdftex.def Info: ./images/qgis018.png  used on input line 263.
+(pdftex.def)             Requested size: 222.92352pt x 168.93164pt.
 <./images/qgis019.png, id=191, 392.46625pt x 93.34875pt>
 File: ./images/qgis019.png Graphic file (type png)
 <use ./images/qgis019.png>
-Package pdftex.def Info: ./images/qgis019.png  used on input line 276. on input
- line 276.
-Package pdftex.def Info: Requested size: 137.36523pt x 32.67255pt on input line
- 276.
+Package pdftex.def Info: ./images/qgis019.png  used on input line 276.
+(pdftex.def)             Requested size: 137.36523pt x 32.67255pt.
 <./images/qgis020.png, id=193, 886.31125pt x 969.6225pt>
 File: ./images/qgis020.png Graphic file (type png)
 <use ./images/qgis020.png>
-Package pdftex.def Info: ./images/qgis020.png  used on input line 289. on input
- line 289.
-Package pdftex.def Info: Requested size: 221.57727pt x 242.40503pt on input lin
-e 289.
+Package pdftex.def Info: ./images/qgis020.png  used on input line 289.
+(pdftex.def)             Requested size: 221.57727pt x 242.40503pt.
 [4 <./images/qgis014.png> <./images/qgis015.png> <./images/qgis016.png> <./imag
 es/qgis017.png> <./images/qgis018.png> <./images/qgis019.png>]
 <./images/qgis021.png, id=213, 884.30376pt x 813.0375pt>
 File: ./images/qgis021.png Graphic file (type png)
 <use ./images/qgis021.png>
-Package pdftex.def Info: ./images/qgis021.png  used on input line 302. on input
- line 302.
-Package pdftex.def Info: Requested size: 221.0754pt x 203.25888pt on input line
- 302.
+Package pdftex.def Info: ./images/qgis021.png  used on input line 302.
+(pdftex.def)             Requested size: 221.0754pt x 203.25888pt.
 <./images/qgis022.png, id=216, 825.0825pt x 602.25pt>
 File: ./images/qgis022.png Graphic file (type png)
 <use ./images/qgis022.png>
-Package pdftex.def Info: ./images/qgis022.png  used on input line 315. on input
- line 315.
-Package pdftex.def Info: Requested size: 206.27011pt x 150.56212pt on input lin
-e 315.
+Package pdftex.def Info: ./images/qgis022.png  used on input line 315.
+(pdftex.def)             Requested size: 206.27011pt x 150.56212pt.
 <./images/qgis023.png, id=217, 719.68875pt x 492.84125pt>
 File: ./images/qgis023.png Graphic file (type png)
 <use ./images/qgis023.png>
-Package pdftex.def Info: ./images/qgis023.png  used on input line 326. on input
- line 326.
-Package pdftex.def Info: Requested size: 251.89484pt x 172.49701pt on input lin
-e 326.
+Package pdftex.def Info: ./images/qgis023.png  used on input line 326.
+(pdftex.def)             Requested size: 251.89484pt x 172.49701pt.
 
 Overfull \hbox (20.04642pt too wide) in paragraph at lines 326--328
  [][] 
@@ -768,17 +716,13 @@ Overfull \hbox (20.04642pt too wide) in paragraph at lines 326--328
 <./images/qgis024.png, id=219, 878.28125pt x 636.3775pt>
 File: ./images/qgis024.png Graphic file (type png)
 <use ./images/qgis024.png>
-Package pdftex.def Info: ./images/qgis024.png  used on input line 339. on input
- line 339.
-Package pdftex.def Info: Requested size: 219.56978pt x 159.09398pt on input lin
-e 339.
+Package pdftex.def Info: ./images/qgis024.png  used on input line 339.
+(pdftex.def)             Requested size: 219.56978pt x 159.09398pt.
 <./images/qgis025.png, id=221, 797.98125pt x 542.025pt>
 File: ./images/qgis025.png Graphic file (type png)
 <use ./images/qgis025.png>
-Package pdftex.def Info: ./images/qgis025.png  used on input line 352. on input
- line 352.
-Package pdftex.def Info: Requested size: 239.39621pt x 162.60875pt on input lin
-e 352.
+Package pdftex.def Info: ./images/qgis025.png  used on input line 352.
+(pdftex.def)             Requested size: 239.39621pt x 162.60875pt.
 
 Overfull \hbox (7.54779pt too wide) in paragraph at lines 352--354
  [][] 
@@ -789,24 +733,18 @@ es/qgis023.png> <./images/qgis024.png>]
 <./images/qgis026.png, id=237, 367.3725pt x 358.33875pt>
 File: ./images/qgis026.png Graphic file (type png)
 <use ./images/qgis026.png>
-Package pdftex.def Info: ./images/qgis026.png  used on input line 365. on input
- line 365.
-Package pdftex.def Info: Requested size: 110.21259pt x 107.50244pt on input lin
-e 365.
+Package pdftex.def Info: ./images/qgis026.png  used on input line 365.
+(pdftex.def)             Requested size: 110.21259pt x 107.50244pt.
 <./images/qgis027.png, id=240, 325.215pt x 303.1325pt>
 File: ./images/qgis027.png Graphic file (type png)
 <use ./images/qgis027.png>
-Package pdftex.def Info: ./images/qgis027.png  used on input line 378. on input
- line 378.
-Package pdftex.def Info: Requested size: 113.82695pt x 106.09796pt on input lin
-e 378.
+Package pdftex.def Info: ./images/qgis027.png  used on input line 378.
+(pdftex.def)             Requested size: 113.82695pt x 106.09796pt.
 <./images/qgis028.png, id=242, 1172.38pt x 786.94pt>
 File: ./images/qgis028.png Graphic file (type png)
 <use ./images/qgis028.png>
-Package pdftex.def Info: ./images/qgis028.png  used on input line 391. on input
- line 391.
-Package pdftex.def Info: Requested size: 234.47185pt x 157.38521pt on input lin
-e 391.
+Package pdftex.def Info: ./images/qgis028.png  used on input line 391.
+(pdftex.def)             Requested size: 234.47185pt x 157.38521pt.
 
 Overfull \hbox (2.62343pt too wide) in paragraph at lines 391--393
  [][] 
@@ -815,10 +753,8 @@ Overfull \hbox (2.62343pt too wide) in paragraph at lines 391--393
 <./images/qgis029.png, id=244, 1176.395pt x 788.9475pt>
 File: ./images/qgis029.png Graphic file (type png)
 <use ./images/qgis029.png>
-Package pdftex.def Info: ./images/qgis029.png  used on input line 404. on input
- line 404.
-Package pdftex.def Info: Requested size: 235.27483pt x 157.7867pt on input line
- 404.
+Package pdftex.def Info: ./images/qgis029.png  used on input line 404.
+(pdftex.def)             Requested size: 235.27483pt x 157.7867pt.
 
 Overfull \hbox (3.4264pt too wide) in paragraph at lines 404--406
  [][] 
@@ -827,33 +763,25 @@ Overfull \hbox (3.4264pt too wide) in paragraph at lines 404--406
 <./images/qgis030.png, id=246, 471.7625pt x 421.575pt>
 File: ./images/qgis030.png Graphic file (type png)
 <use ./images/qgis030.png>
-Package pdftex.def Info: ./images/qgis030.png  used on input line 417. on input
- line 417.
-Package pdftex.def Info: Requested size: 188.70164pt x 168.627pt on input line 
-417.
+Package pdftex.def Info: ./images/qgis030.png  used on input line 417.
+(pdftex.def)             Requested size: 188.70164pt x 168.627pt.
 <./images/qgis031.png, id=248, 801.99625pt x 995.72pt>
 File: ./images/qgis031.png Graphic file (type png)
 <use ./images/qgis031.png>
-Package pdftex.def Info: ./images/qgis031.png  used on input line 430. on input
- line 430.
-Package pdftex.def Info: Requested size: 176.43971pt x 219.05907pt on input lin
-e 430.
+Package pdftex.def Info: ./images/qgis031.png  used on input line 430.
+(pdftex.def)             Requested size: 176.43971pt x 219.05907pt.
 [6 <./images/qgis025.png> <./images/qgis026.png> <./images/qgis027.png> <./imag
 es/qgis028.png> <./images/qgis029.png> <./images/qgis030.png>]
 <./images/qgis032.png, id=266, 724.7075pt x 907.39pt>
 File: ./images/qgis032.png Graphic file (type png)
 <use ./images/qgis032.png>
-Package pdftex.def Info: ./images/qgis032.png  used on input line 443. on input
- line 443.
-Package pdftex.def Info: Requested size: 217.41393pt x 272.2191pt on input line
- 443.
+Package pdftex.def Info: ./images/qgis032.png  used on input line 443.
+(pdftex.def)             Requested size: 217.41393pt x 272.2191pt.
 <./images/qgis033.png, id=267, 727.71875pt x 901.3675pt>
 File: ./images/qgis033.png Graphic file (type png)
 <use ./images/qgis033.png>
-Package pdftex.def Info: ./images/qgis033.png  used on input line 454. on input
- line 454.
-Package pdftex.def Info: Requested size: 218.3173pt x 270.41232pt on input line
- 454.
+Package pdftex.def Info: ./images/qgis033.png  used on input line 454.
+(pdftex.def)             Requested size: 218.3173pt x 270.41232pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 461--461
 [][]\T1/ppl/b/n/14.4 TRAITEMENT DE DON-NEES
@@ -862,33 +790,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--461
 <./images/qgis034.png, id=269, 726.715pt x 904.37875pt>
 File: ./images/qgis034.png Graphic file (type png)
 <use ./images/qgis034.png>
-Package pdftex.def Info: ./images/qgis034.png  used on input line 469. on input
- line 469.
-Package pdftex.def Info: Requested size: 181.6783pt x 226.09413pt on input line
- 469.
+Package pdftex.def Info: ./images/qgis034.png  used on input line 469.
+(pdftex.def)             Requested size: 181.6783pt x 226.09413pt.
 <./images/qgis035.png, id=271, 725.71124pt x 901.3675pt>
 File: ./images/qgis035.png Graphic file (type png)
 <use ./images/qgis035.png>
-Package pdftex.def Info: ./images/qgis035.png  used on input line 482. on input
- line 482.
-Package pdftex.def Info: Requested size: 217.71504pt x 270.41232pt on input lin
-e 482.
+Package pdftex.def Info: ./images/qgis035.png  used on input line 482.
+(pdftex.def)             Requested size: 217.71504pt x 270.41232pt.
 [7 <./images/qgis031.png> <./images/qgis032.png> <./images/qgis033.png> <./imag
 es/qgis034.png>]
 <./images/qgis036.png, id=287, 728.7225pt x 901.3675pt>
 File: ./images/qgis036.png Graphic file (type png)
 <use ./images/qgis036.png>
-Package pdftex.def Info: ./images/qgis036.png  used on input line 495. on input
- line 495.
-Package pdftex.def Info: Requested size: 218.61844pt x 270.41232pt on input lin
-e 495.
+Package pdftex.def Info: ./images/qgis036.png  used on input line 495.
+(pdftex.def)             Requested size: 218.61844pt x 270.41232pt.
 <./images/qgis037.png, id=289, 1331.97626pt x 1139.25626pt>
 File: ./images/qgis037.png Graphic file (type png)
 <use ./images/qgis037.png>
-Package pdftex.def Info: ./images/qgis037.png  used on input line 508. on input
- line 508.
-Package pdftex.def Info: Requested size: 266.39053pt x 227.84721pt on input lin
-e 508.
+Package pdftex.def Info: ./images/qgis037.png  used on input line 508.
+(pdftex.def)             Requested size: 266.39053pt x 227.84721pt.
 
 Overfull \hbox (34.54211pt too wide) in paragraph at lines 508--510
  [][] 
@@ -897,10 +817,8 @@ Overfull \hbox (34.54211pt too wide) in paragraph at lines 508--510
 <./images/qgis038.png, id=291, 1335.99126pt x 1141.26375pt>
 File: ./images/qgis038.png Graphic file (type png)
 <use ./images/qgis038.png>
-Package pdftex.def Info: ./images/qgis038.png  used on input line 521. on input
- line 521.
-Package pdftex.def Info: Requested size: 267.19351pt x 228.2487pt on input line
- 521.
+Package pdftex.def Info: ./images/qgis038.png  used on input line 521.
+(pdftex.def)             Requested size: 267.19351pt x 228.2487pt.
 
 Overfull \hbox (35.3451pt too wide) in paragraph at lines 521--523
  [][] 
@@ -909,26 +827,20 @@ Overfull \hbox (35.3451pt too wide) in paragraph at lines 521--523
 <./images/qgis039.png, id=293, 726.715pt x 904.37875pt>
 File: ./images/qgis039.png Graphic file (type png)
 <use ./images/qgis039.png>
-Package pdftex.def Info: ./images/qgis039.png  used on input line 534. on input
- line 534.
-Package pdftex.def Info: Requested size: 218.01617pt x 271.31572pt on input lin
-e 534.
+Package pdftex.def Info: ./images/qgis039.png  used on input line 534.
+(pdftex.def)             Requested size: 218.01617pt x 271.31572pt.
 [8 <./images/qgis035.png> <./images/qgis036.png> <./images/qgis037.png> <./imag
 es/qgis038.png>]
 <./images/qgis040.png, id=307, 727.71875pt x 898.35625pt>
 File: ./images/qgis040.png Graphic file (type png)
 <use ./images/qgis040.png>
-Package pdftex.def Info: ./images/qgis040.png  used on input line 547. on input
- line 547.
-Package pdftex.def Info: Requested size: 218.3173pt x 269.50894pt on input line
- 547.
+Package pdftex.def Info: ./images/qgis040.png  used on input line 547.
+(pdftex.def)             Requested size: 218.3173pt x 269.50894pt.
 <./images/qgis041.png, id=309, 1335.99126pt x 1142.2675pt>
 File: ./images/qgis041.png Graphic file (type png)
 <use ./images/qgis041.png>
-Package pdftex.def Info: ./images/qgis041.png  used on input line 560. on input
- line 560.
-Package pdftex.def Info: Requested size: 267.19351pt x 228.44945pt on input lin
-e 560.
+Package pdftex.def Info: ./images/qgis041.png  used on input line 560.
+(pdftex.def)             Requested size: 267.19351pt x 228.44945pt.
 
 Overfull \hbox (35.3451pt too wide) in paragraph at lines 560--562
  [][] 
@@ -937,26 +849,20 @@ Overfull \hbox (35.3451pt too wide) in paragraph at lines 560--562
 <./images/qgis042.png, id=311, 736.7525pt x 897.3525pt>
 File: ./images/qgis042.png Graphic file (type png)
 <use ./images/qgis042.png>
-Package pdftex.def Info: ./images/qgis042.png  used on input line 573. on input
- line 573.
-Package pdftex.def Info: Requested size: 221.02745pt x 269.20782pt on input lin
-e 573.
+Package pdftex.def Info: ./images/qgis042.png  used on input line 573.
+(pdftex.def)             Requested size: 221.02745pt x 269.20782pt.
 <./images/qgis043.png, id=313, 729.72626pt x 906.38625pt>
 File: ./images/qgis043.png Graphic file (type png)
 <use ./images/qgis043.png>
-Package pdftex.def Info: ./images/qgis043.png  used on input line 586. on input
- line 586.
-Package pdftex.def Info: Requested size: 218.91957pt x 271.91797pt on input lin
-e 586.
+Package pdftex.def Info: ./images/qgis043.png  used on input line 586.
+(pdftex.def)             Requested size: 218.91957pt x 271.91797pt.
 [9 <./images/qgis039.png> <./images/qgis040.png> <./images/qgis041.png> <./imag
 es/qgis042.png>]
 <./images/qgis044.png, id=327, 1335.99126pt x 1141.26375pt>
 File: ./images/qgis044.png Graphic file (type png)
 <use ./images/qgis044.png>
-Package pdftex.def Info: ./images/qgis044.png  used on input line 599. on input
- line 599.
-Package pdftex.def Info: Requested size: 267.19351pt x 228.2487pt on input line
- 599.
+Package pdftex.def Info: ./images/qgis044.png  used on input line 599.
+(pdftex.def)             Requested size: 267.19351pt x 228.2487pt.
 
 Overfull \hbox (35.3451pt too wide) in paragraph at lines 599--601
  [][] 
@@ -975,24 +881,18 @@ Package multicol Warning: Using `0' columns doesn't seem a good idea.
 <./images/gps000.png, id=340, 700.6175pt x 593.21625pt>
 File: ./images/gps000.png Graphic file (type png)
 <use ./images/gps000.png>
-Package pdftex.def Info: ./images/gps000.png  used on input line 23. on input l
-ine 23.
-Package pdftex.def Info: Requested size: 210.18686pt x 177.96625pt on input lin
-e 23.
+Package pdftex.def Info: ./images/gps000.png  used on input line 23.
+(pdftex.def)             Requested size: 210.18686pt x 177.96625pt.
 <./images/gps001.png, id=342, 536.0025pt x 925.4575pt>
 File: ./images/gps001.png Graphic file (type png)
 <use ./images/gps001.png>
-Package pdftex.def Info: ./images/gps001.png  used on input line 36. on input l
-ine 36.
-Package pdftex.def Info: Requested size: 150.07967pt x 259.12633pt on input lin
-e 36.
+Package pdftex.def Info: ./images/gps001.png  used on input line 36.
+(pdftex.def)             Requested size: 150.07967pt x 259.12633pt.
 <./images/gps002.jpg, id=344, 542.025pt x 963.6pt>
 File: ./images/gps002.jpg Graphic file (type jpg)
 <use ./images/gps002.jpg>
-Package pdftex.def Info: ./images/gps002.jpg  used on input line 49. on input l
-ine 49.
-Package pdftex.def Info: Requested size: 243.90898pt x 433.616pt on input line 
-49.
+Package pdftex.def Info: ./images/gps002.jpg  used on input line 49.
+(pdftex.def)             Requested size: 243.90898pt x 433.616pt.
 
 Overfull \hbox (12.06056pt too wide) in paragraph at lines 49--51
  [][] 
@@ -1001,10 +901,8 @@ Overfull \hbox (12.06056pt too wide) in paragraph at lines 49--51
 <./images/gps003.jpg, id=346, 542.025pt x 963.6pt>
 File: ./images/gps003.jpg Graphic file (type jpg)
 <use ./images/gps003.jpg>
-Package pdftex.def Info: ./images/gps003.jpg  used on input line 62. on input l
-ine 62.
-Package pdftex.def Info: Requested size: 238.49173pt x 423.98532pt on input lin
-e 62.
+Package pdftex.def Info: ./images/gps003.jpg  used on input line 62.
+(pdftex.def)             Requested size: 238.49173pt x 423.98532pt.
 
 Overfull \hbox (6.64331pt too wide) in paragraph at lines 62--64
  [][] 
@@ -1028,10 +926,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 <./images/gps004.png, id=360, 1369.115pt x 1433.355pt>
 File: ./images/gps004.png Graphic file (type png)
 <use ./images/gps004.png>
-Package pdftex.def Info: ./images/gps004.png  used on input line 83. on input l
-ine 83.
-Package pdftex.def Info: Requested size: 246.43007pt x 257.99277pt on input lin
-e 83.
+Package pdftex.def Info: ./images/gps004.png  used on input line 83.
+(pdftex.def)             Requested size: 246.43007pt x 257.99277pt.
 
 Overfull \hbox (14.58165pt too wide) in paragraph at lines 83--85
  [][] 
@@ -1045,10 +941,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 <./images/gps005.png, id=362, 1375.1375pt x 1319.93124pt>
 File: ./images/gps005.png Graphic file (type png)
 <use ./images/gps005.png>
-Package pdftex.def Info: ./images/gps005.png  used on input line 96. on input l
-ine 96.
-Package pdftex.def Info: Requested size: 247.51407pt x 237.57736pt on input lin
-e 96.
+Package pdftex.def Info: ./images/gps005.png  used on input line 96.
+(pdftex.def)             Requested size: 247.51407pt x 237.57736pt.
 
 Overfull \hbox (15.66565pt too wide) in paragraph at lines 96--98
  [][] 
@@ -1083,10 +977,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--110
 <./images/gps006.jpg, id=374, 542.025pt x 963.6pt>
 File: ./images/gps006.jpg Graphic file (type jpg)
 <use ./images/gps006.jpg>
-Package pdftex.def Info: ./images/gps006.jpg  used on input line 115. on input 
-line 115.
-Package pdftex.def Info: Requested size: 162.60875pt x 289.08223pt on input lin
-e 115.
+Package pdftex.def Info: ./images/gps006.jpg  used on input line 115.
+(pdftex.def)             Requested size: 162.60875pt x 289.08223pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
@@ -1100,10 +992,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 <./images/gps007.jpg, id=376, 540.0175pt x 679.53876pt>
 File: ./images/gps007.jpg Graphic file (type jpg)
 <use ./images/gps007.jpg>
-Package pdftex.def Info: ./images/gps007.jpg  used on input line 128. on input 
-line 128.
-Package pdftex.def Info: Requested size: 162.0065pt x 203.8632pt on input line 
-128.
+Package pdftex.def Info: ./images/gps007.jpg  used on input line 128.
+(pdftex.def)             Requested size: 162.0065pt x 203.8632pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
@@ -1117,10 +1007,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 <./images/gps008.jpg, id=378, 542.025pt x 963.6pt>
 File: ./images/gps008.jpg Graphic file (type jpg)
 <use ./images/gps008.jpg>
-Package pdftex.def Info: ./images/gps008.jpg  used on input line 141. on input 
-line 141.
-Package pdftex.def Info: Requested size: 162.60875pt x 289.08223pt on input lin
-e 141.
+Package pdftex.def Info: ./images/gps008.jpg  used on input line 141.
+(pdftex.def)             Requested size: 162.60875pt x 289.08223pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
@@ -1134,10 +1022,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 <./images/gps009.jpg, id=380, 542.025pt x 718.685pt>
 File: ./images/gps009.jpg Graphic file (type jpg)
 <use ./images/gps009.jpg>
-Package pdftex.def Info: ./images/gps009.jpg  used on input line 154. on input 
-line 154.
-Package pdftex.def Info: Requested size: 162.60875pt x 215.60716pt on input lin
-e 154.
+Package pdftex.def Info: ./images/gps009.jpg  used on input line 154.
+(pdftex.def)             Requested size: 162.60875pt x 215.60716pt.
 [13 <./images/gps006.jpg> <./images/gps007.jpg> <./images/gps008.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
@@ -1151,10 +1037,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 <./images/gps010.jpg, id=391, 542.025pt x 679.53876pt>
 File: ./images/gps010.jpg Graphic file (type jpg)
 <use ./images/gps010.jpg>
-Package pdftex.def Info: ./images/gps010.jpg  used on input line 167. on input 
-line 167.
-Package pdftex.def Info: Requested size: 162.60875pt x 203.8632pt on input line
- 167.
+Package pdftex.def Info: ./images/gps010.jpg  used on input line 167.
+(pdftex.def)             Requested size: 162.60875pt x 203.8632pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
@@ -1168,10 +1052,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 <./images/gps011.jpg, id=393, 542.025pt x 963.6pt>
 File: ./images/gps011.jpg Graphic file (type jpg)
 <use ./images/gps011.jpg>
-Package pdftex.def Info: ./images/gps011.jpg  used on input line 180. on input 
-line 180.
-Package pdftex.def Info: Requested size: 162.60875pt x 289.08223pt on input lin
-e 180.
+Package pdftex.def Info: ./images/gps011.jpg  used on input line 180.
+(pdftex.def)             Requested size: 162.60875pt x 289.08223pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
@@ -1185,10 +1067,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
 <./images/gps012.png, id=395, 200.75pt x 452.69125pt>
 File: ./images/gps012.png Graphic file (type png)
 <use ./images/gps012.png>
-Package pdftex.def Info: ./images/gps012.png  used on input line 195. on input 
-line 195.
-Package pdftex.def Info: Requested size: 96.35889pt x 217.28932pt on input line
- 195.
+Package pdftex.def Info: ./images/gps012.png  used on input line 195.
+(pdftex.def)             Requested size: 96.35889pt x 217.28932pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
@@ -1202,10 +1082,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 <./images/gps013.png, id=397, 241.90375pt x 296.10625pt>
 File: ./images/gps013.png Graphic file (type png)
 <use ./images/gps013.png>
-Package pdftex.def Info: ./images/gps013.png  used on input line 208. on input 
-line 208.
-Package pdftex.def Info: Requested size: 108.85567pt x 133.24657pt on input lin
-e 208.
+Package pdftex.def Info: ./images/gps013.png  used on input line 208.
+(pdftex.def)             Requested size: 108.85567pt x 133.24657pt.
 [14 <./images/gps009.jpg> <./images/gps010.jpg> <./images/gps011.jpg> <./images
 /gps012.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 215--216
@@ -1220,10 +1098,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
 <./images/gps014.png, id=407, 901.3675pt x 760.8425pt>
 File: ./images/gps014.png Graphic file (type png)
 <use ./images/gps014.png>
-Package pdftex.def Info: ./images/gps014.png  used on input line 221. on input 
-line 221.
-Package pdftex.def Info: Requested size: 225.34131pt x 190.21016pt on input lin
-e 221.
+Package pdftex.def Info: ./images/gps014.png  used on input line 221.
+(pdftex.def)             Requested size: 225.34131pt x 190.21016pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
@@ -1237,10 +1113,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 <./images/gps015.png, id=409, 587.19376pt x 281.05pt>
 File: ./images/gps015.png Graphic file (type png)
 <use ./images/gps015.png>
-Package pdftex.def Info: ./images/gps015.png  used on input line 234. on input 
-line 234.
-Package pdftex.def Info: Requested size: 205.52089pt x 98.36896pt on input line
- 234.
+Package pdftex.def Info: ./images/gps015.png  used on input line 234.
+(pdftex.def)             Requested size: 205.52089pt x 98.36896pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
@@ -1254,10 +1128,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 <./images/gps016.png, id=411, 1179.40625pt x 949.5475pt>
 File: ./images/gps016.png Graphic file (type png)
 <use ./images/gps016.png>
-Package pdftex.def Info: ./images/gps016.png  used on input line 247. on input 
-line 247.
-Package pdftex.def Info: Requested size: 212.28397pt x 170.91116pt on input lin
-e 247.
+Package pdftex.def Info: ./images/gps016.png  used on input line 247.
+(pdftex.def)             Requested size: 212.28397pt x 170.91116pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
@@ -1271,10 +1143,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
 <./images/gps017.png, id=413, 531.9875pt x 279.0425pt>
 File: ./images/gps017.png Graphic file (type png)
 <use ./images/gps017.png>
-Package pdftex.def Info: ./images/gps017.png  used on input line 260. on input 
-line 260.
-Package pdftex.def Info: Requested size: 212.79123pt x 111.615pt on input line 
-260.
+Package pdftex.def Info: ./images/gps017.png  used on input line 260.
+(pdftex.def)             Requested size: 212.79123pt x 111.615pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
@@ -1288,10 +1158,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 <./images/gps018.png, id=415, 720.6925pt x 304.13625pt>
 File: ./images/gps018.png Graphic file (type png)
 <use ./images/gps018.png>
-Package pdftex.def Info: ./images/gps018.png  used on input line 273. on input 
-line 273.
-Package pdftex.def Info: Requested size: 216.20941pt x 91.24158pt on input line
- 273.
+Package pdftex.def Info: ./images/gps018.png  used on input line 273.
+(pdftex.def)             Requested size: 216.20941pt x 91.24158pt.
 ) [15 <./images/gps013.png> <./images/gps014.png> <./images/gps015.png> <./imag
 es/gps016.png> <./images/gps017.png> <./images/gps018.png>]
 (./FR_article_GRASS.tex
@@ -1302,77 +1170,54 @@ Package multicol Warning: Using `0' columns doesn't seem a good idea.
 <./images/grass008.png, id=433, 540.51938pt x 393.72093pt>
 File: ./images/grass008.png Graphic file (type png)
 <use ./images/grass008.png>
-Package pdftex.def Info: ./images/grass008.png  used on input line 20. on input
- line 20.
-Package pdftex.def Info: Requested size: 189.18462pt x 137.80438pt on input lin
-e 20.
+Package pdftex.def Info: ./images/grass008.png  used on input line 20.
+(pdftex.def)             Requested size: 189.18462pt x 137.80438pt.
 <./images/grass009.png, id=435, 532.23843pt x 392.96812pt>
 File: ./images/grass009.png Graphic file (type png)
 <use ./images/grass009.png>
-Package pdftex.def Info: ./images/grass009.png  used on input line 34. on input
- line 34.
-Package pdftex.def Info: Requested size: 186.28624pt x 137.5409pt on input line
- 34.
+Package pdftex.def Info: ./images/grass009.png  used on input line 34.
+(pdftex.def)             Requested size: 186.28624pt x 137.5409pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 41.
 <./images/grass010.png, id=437, 533.74406pt x 395.22656pt>
 File: ./images/grass010.png Graphic file (type png)
 <use ./images/grass010.png>
-Package pdftex.def Info: ./images/grass010.png  used on input line 48. on input
- line 48.
-Package pdftex.def Info: Requested size: 186.81322pt x 138.33136pt on input lin
-e 48.
+Package pdftex.def Info: ./images/grass010.png  used on input line 48.
+(pdftex.def)             Requested size: 186.81322pt x 138.33136pt.
 <./images/grass011.png, id=439, 532.23843pt x 391.4625pt>
 File: ./images/grass011.png Graphic file (type png)
 <use ./images/grass011.png>
-Package pdftex.def Info: ./images/grass011.png  used on input line 62. on input
- line 62.
-Package pdftex.def Info: Requested size: 186.28624pt x 137.01392pt on input lin
-e 62.
+Package pdftex.def Info: ./images/grass011.png  used on input line 62.
+(pdftex.def)             Requested size: 186.28624pt x 137.01392pt.
 <./images/grass012.png, id=441, 533.74406pt x 393.72093pt>
 File: ./images/grass012.png Graphic file (type png)
 <use ./images/grass012.png>
-Package pdftex.def Info: ./images/grass012.png  used on input line 95. on input
- line 95.
-Package pdftex.def Info: Requested size: 186.81322pt x 137.80438pt on input lin
-e 95.
+Package pdftex.def Info: ./images/grass012.png  used on input line 95.
+(pdftex.def)             Requested size: 186.81322pt x 137.80438pt.
 [16 <./images/grass008.png (PNG copy)> <./images/grass009.png (PNG copy)> <./im
 ages/grass010.png (PNG copy)> <./images/grass011.png (PNG copy)>]
 <./images/grass013.png, id=453, 539.01375pt x 383.18156pt>
 File: ./images/grass013.png Graphic file (type png)
 <use ./images/grass013.png>
-Package pdftex.def Info: ./images/grass013.png  used on input line 109. on inpu
-t line 109.
-Package pdftex.def Info: Requested size: 188.65762pt x 134.11555pt on input lin
-e 109.
+Package pdftex.def Info: ./images/grass013.png  used on input line 109.
+(pdftex.def)             Requested size: 188.65762pt x 134.11555pt.
 <./images/grass014.png, id=455, 550.30594pt x 363.60844pt>
 File: ./images/grass014.png Graphic file (type png)
 <use ./images/grass014.png>
-Package pdftex.def Info: ./images/grass014.png  used on input line 127. on inpu
-t line 127.
-Package pdftex.def Info: Requested size: 192.60995pt x 127.26485pt on input lin
-e 127.
+Package pdftex.def Info: ./images/grass014.png  used on input line 127.
+(pdftex.def)             Requested size: 192.60995pt x 127.26485pt.
 <./images/grass015.png, id=458, 732.7375pt x 905.3825pt>
 File: ./images/grass015.png Graphic file (type png)
 <use ./images/grass015.png>
-Package pdftex.def Info: ./images/grass015.png  used on input line 147. on inpu
-t line 147.
-Package pdftex.def Info: Requested size: 146.5449pt x 181.07329pt on input line
- 147.
+Package pdftex.def Info: ./images/grass015.png  used on input line 147.
+(pdftex.def)             Requested size: 146.5449pt x 181.07329pt.
 <./images/grass016.png, id=459, 732.7375pt x 907.39pt>
 File: ./images/grass016.png Graphic file (type png)
 <use ./images/grass016.png>
-Package pdftex.def Info: ./images/grass016.png  used on input line 158. on inpu
-t line 158.
-Package pdftex.def Info: Requested size: 146.5449pt x 181.47478pt on input line
- 158.
+Package pdftex.def Info: ./images/grass016.png  used on input line 158.
+(pdftex.def)             Requested size: 146.5449pt x 181.47478pt.
  [17 <./images/grass012.png (PNG copy)> <./images/grass013.png (PNG copy)> <./i
 mages/grass014.png (PNG copy)> <./images/grass015.png>]
-Underfull \hbox (badness 7151) in paragraph at lines 165--165
-[][]\T1/ppl/b/n/12 MISSION DE PRESER-VA-TION D'UN
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1400,10 +1245,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--312
 <./images/grass021.png, id=485, 533.74406pt x 386.94562pt>
 File: ./images/grass021.png Graphic file (type png)
 <use ./images/grass021.png>
-Package pdftex.def Info: ./images/grass021.png  used on input line 334. on inpu
-t line 334.
-Package pdftex.def Info: Requested size: 186.81322pt x 135.43298pt on input lin
-e 334.
+Package pdftex.def Info: ./images/grass021.png  used on input line 334.
+(pdftex.def)             Requested size: 186.81322pt x 135.43298pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 341--341
 [][]\T1/ppl/b/n/12 METTRE EN BLOC LES ZONES
@@ -1417,25 +1260,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--354
 <./images/grass022.png, id=487, 536.75531pt x 393.72093pt>
 File: ./images/grass022.png Graphic file (type png)
 <use ./images/grass022.png>
-Package pdftex.def Info: ./images/grass022.png  used on input line 359. on inpu
-t line 359.
-Package pdftex.def Info: Requested size: 187.86716pt x 137.80438pt on input lin
-e 359.
+Package pdftex.def Info: ./images/grass022.png  used on input line 359.
+(pdftex.def)             Requested size: 187.86716pt x 137.80438pt.
 [19 <./images/grass021.png (PNG copy)>]
 <./images/grass023.png, id=495, 539.01375pt x 387.69844pt>
 File: ./images/grass023.png Graphic file (type png)
 <use ./images/grass023.png>
-Package pdftex.def Info: ./images/grass023.png  used on input line 380. on inpu
-t line 380.
-Package pdftex.def Info: Requested size: 188.65762pt x 135.69647pt on input lin
-e 380.
+Package pdftex.def Info: ./images/grass023.png  used on input line 380.
+(pdftex.def)             Requested size: 188.65762pt x 135.69647pt.
 <./images/grass024.png, id=497, 538.26094pt x 389.95688pt>
 File: ./images/grass024.png Graphic file (type png)
 <use ./images/grass024.png>
-Package pdftex.def Info: ./images/grass024.png  used on input line 396. on inpu
-t line 396.
-Package pdftex.def Info: Requested size: 188.39415pt x 136.48694pt on input lin
-e 396.
+Package pdftex.def Info: ./images/grass024.png  used on input line 396.
+(pdftex.def)             Requested size: 188.39415pt x 136.48694pt.
 
 Underfull \hbox (badness 6204) in paragraph at lines 403--404
 []\T1/ppl/m/n/10 Exportez ce fichier vec-to-riel d'habitat avec
@@ -1555,19 +1392,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (./FR_main_document.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
-Package rerunfilecheck Info: File `FR_main_document.out' has not changed.
-(rerunfilecheck)             Checksum: 307696227DD0F8A9E96D6CE3BAED114D;1809.
 
+
+Package rerunfilecheck Warning: File `FR_main_document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `FR_main_document.out':
+(rerunfilecheck)             Before: 19B0CD68BC57C219BCC947382E456563;1799
+(rerunfilecheck)             After:  AF80220D672D6FAC9F7D591E9B83B072;1811.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 8853 strings out of 494926
- 127917 string characters out of 6180801
- 213944 words of memory out of 5000000
- 11798 multiletter control sequences out of 15000+600000
+ 8853 strings out of 494921
+ 127918 string characters out of 6180725
+ 213386 words of memory out of 5000000
+ 11803 multiletter control sequences out of 15000+600000
  25745 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,12n,47p,682b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1578,7 +1421,7 @@ t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
 alatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr
 i8a.pfb>
-Output written on FR_main_document.pdf (22 pages, 20484283 bytes).
+Output written on FR_main_document.pdf (22 pages, 20484293 bytes).
 PDF statistics:
  582 PDF objects out of 1000 (max. 8388607)
  409 compressed objects within 5 object streams
