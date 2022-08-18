@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Titan}{3}{0}{1}
+\beamer@sectionintoc {2}{Energy Balance}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Atm. Layers}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Atm. Profile}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Radiation Budget}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Energy Budget}{9}{0}{2}
+\beamer@sectionintoc {3}{Oceans \& Lakes}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Polar lakes}{11}{0}{3}
+\beamer@subsectionintoc {3}{2}{T91 Fly-by}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{Ligeia Mare}{13}{0}{3}
+\beamer@subsectionintoc {3}{4}{Lake bathymetry}{14}{0}{3}
+\beamer@subsectionintoc {3}{5}{Evaporation}{16}{0}{3}
+\beamer@sectionintoc {4}{Rainfall/Run-off}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{Rainfall}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{ITCZ}{19}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{20}{0}{5}

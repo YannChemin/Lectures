@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Thailand}{3}{0}{2}
+\beamer@sectionintoc {3}{Pakistan}{5}{0}{3}
+\beamer@sectionintoc {4}{Sri Lanka}{7}{0}{4}
+\beamer@sectionintoc {5}{Not good yet}{10}{0}{5}
+\beamer@sectionintoc {6}{Teaching}{11}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{13}{0}{7}

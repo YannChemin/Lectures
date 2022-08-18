@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Evapotranspiration Modeling}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Overview}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{ETo \& ETpot}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{ETa definition}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{ETa examples 1}{7}{0}{2}
+\beamer@subsectionintoc {2}{5}{ETa examples 2}{8}{0}{2}
+\beamer@subsectionintoc {2}{6}{ETa examples 3}{9}{0}{2}
+\beamer@subsectionintoc {2}{7}{Chain processing}{10}{0}{2}
+\beamer@subsectionintoc {2}{8}{MOD 16}{12}{0}{2}
+\beamer@sectionintoc {3}{Crowdsourcing}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Rationale}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Year 1}{14}{0}{3}
+\beamer@subsectionintoc {3}{3}{Year 2}{15}{0}{3}
+\beamer@subsectionintoc {3}{4}{Year 3}{16}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{17}{0}{4}

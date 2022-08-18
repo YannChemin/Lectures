@@ -1,0 +1,245 @@
+\documentclass[xcolor=dvipsnames,beamer]{beamer} %handout,notes=show
+
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+% \usepackage{default}
+\usepackage{graphicx}
+%  \usepackage[pdftex]{hyperref}
+\usepackage{url}
+\usepackage{amsmath}
+
+% frames have to be fragile
+\newif\ifnotes
+\input{tmpnotessettings}
+%\notestrue
+
+
+\ifnotes
+%\setbeamertemplate{note page}[plain]
+\setbeamertemplate{note page}[compress]
+\setbeamerfont{note page}{size=\large}
+\setbeameroption{show only notes}
+%\setbeameroption{show notes}
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]%
+\else
+%\setbeameroption{hide notes}
+\fi
+%\notesfalse
+
+
+
+% nastaveni TypeWriter
+%\usepackage{courier}
+%\usepackage{lmodern}
+%\renewcommand*\ttdefault{txtt}
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+
+
+% \usepackage{verbatim}
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{listings}
+% \usepackage{courier}
+\definecolor{grey}{RGB}{70,70,70}
+\definecolor{green}{RGB}{0,255,0}
+\definecolor{red}{RGB}{202,53,53}
+\definecolor{lightGrey}{RGB}{250,250,250}
+\definecolor{darkGrey}{RGB}{50,50,50}
+
+
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+
+% \usetheme{Warsaw}
+\usetheme{Madrid}
+% \usetheme{Szeged}
+% \useoutertheme{infolines}
+\usecolortheme[named=MidnightBlue]{structure}
+% \usecolortheme[named=PineGreen]{structure}
+% \setbeamertemplate{navigation symbols}{}
+
+
+
+
+\title[Evapotranspiration]
+{Evapotranspiration}
+%\subtitle{SVO\v{C}}
+%\pdforstring{}{}
+\author[Yann Chemin]
+{Yann Chemin}
+
+\institute[IWMI]
+{International Water Management Institute\\
+\vspace{20pt}
+% \includegraphics[width=1cm]{iwmi}
+}
+\date{June 12, 2013}
+
+
+%\AtBeginSection[]{\begin{frame}\frametitle{Obsah}%
+%\tableofcontents[currentsection ]\end{frame}}
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>
+%  \frametitle{Obsah}
+%  \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+\setbeamercovered{transparent}
+
+\hypersetup{%
+	pdfauthor={Yann Chemin},%
+	pdfsubject={Presentation},%
+    pdfkeywords={Evapotranspiration, IWMI}
+}
+
+\input{nastavenilst}
+
+\newcommand{\overovaciref}[1]{{\scriptsize(\ref{#1})}}
+
+
+\usepackage{tipa}
+\newcommand{\pron}[2]{#1 [#2]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\titlepage
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{Contents}
+% \tableofcontents
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Overview}
+
+Evapotranspiration is the largest transiting quantity in the daily 
+hydrological cycle along with rain. 
+\newline
+
+It is a resource managed by several stakeholders
+\begin{itemize}
+ \item Governments
+ \item Basin water organizations
+ \item Irrigation systems
+ \item Agribusinesses
+ \item Environmental services managers
+\end{itemize}
+
+
+\end{frame}
+
+\section{ET modeling}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{ET modeling}
+
+The residual energy available to evaporate water \\
+from leaves (transpiration) or \\
+from soil (evaporation) \\
+
+\begin{block}{There are several types of evapotranspiration modeling methods}
+\begin{itemize}
+ \item Reference ET: Hargreaves, Penman-Monteith
+ \item Potential ET: Priestley-Taylor, astronomical
+ \item Actual ET: Thermodynamic/energy balance (mostly)
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\section{ETa example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Equity of water use in irrigation systems}
+
+Irrigation water monitoring \& management
+\begin{itemize}
+ \item Map: Uniform colour is equity of water distribution
+ \item Graph: irrigation system equity in time (daily, 12 years)
+\end{itemize}
+
+\begin{columns}[l]
+\column{0.2\textwidth}
+\begin{center}
+\includegraphics[width=4cm]{fess2012ef}
+\end{center}
+
+\column{0.8\textwidth}
+\begin{flushright}
+  \includegraphics[width=8cm]{fess2012meaneftemporal}
+\end{flushright}
+\end{columns}
+
+\end{frame}
+
+
+\section{MOD 16}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{MOD16 MODIS product}
+
+Global monthly (MOD16A2) and yearly (MOD16A3) dataset
+\begin{center}
+ \includegraphics[width=10.5cm]{MOD16_2000.png}
+\end{center}
+8km parameterization, validated on Fluxnet data.\\
+Not validated daily.
+\end{frame}
+
+
+\section{Asia and Africa}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Asia and Africa}
+
+\begin{columns}[l]
+\column{0.6\textwidth}
+\begin{enumerate}
+ \item Worlds of climatological variability each
+ \item Asian regions (CAC, SA, EA) for IWMI
+ \item Africa is one continent-island (processing)
+ \item On-ground monitoring is low to non-existent
+\end{enumerate}
+
+
+
+\column{0.4\textwidth}
+\begin{center}
+ \includegraphics[width=5cm]{elephants}
+\end{center}
+\end{columns}
+
+\end{frame}
+
+\section{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Conclusions}
+
+\begin{enumerate}
+ \item EvapoTranspiration is the residual of the energy balance
+ \item ET is needed through all water management decision-levels
+ \item Low-tech environments
+ \item Low monitoring commitments
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Thank You}
+
+\begin{center}
+ \includegraphics[width=5cm]{elephants}
+\end{center}
+
+\end{frame}
+
+\end{document}

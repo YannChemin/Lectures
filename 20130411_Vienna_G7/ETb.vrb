@@ -1,0 +1,16 @@
+\frametitle{128-cores Tilera}
+
+\begin{columns}[l]
+\column[t]{0.5\textwidth}
+\begin{center}
+ 64-core Tile-GX\newline\linebreak
+ \includegraphics[width=5cm]{TILE-Gx_Block_Diagram_large}
+\end{center}
+\column[t]{0.5\textwidth}
+\begin{center}
+ Dual Tile-GX on {\small $1/2$} rack board\newline\linebreak
+ \includegraphics[width=5cm]{tilera_quanta_sq2_mobo}
+\end{center}
+
+\end{columns}
+

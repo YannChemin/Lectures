@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Preamble}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Location/timelines}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objectives}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Cross-section}{8}{0}{1}
+\beamer@sectionintoc {2}{Chandrayaan-1 M$^3$}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Craters location map}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Craters hyperspectral signal}{12}{0}{2}
+\beamer@sectionintoc {3}{Methods and results}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{FeO Mapping}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Zhang et al. corrected}{16}{0}{3}
+\beamer@subsectionintoc {3}{3}{Object-based classification}{17}{0}{3}
+\beamer@subsectionintoc {3}{4}{Relative Age Mapping}{19}{0}{3}
+\beamer@subsectionintoc {3}{5}{Manual seek and compare}{20}{0}{3}
+\beamer@subsectionintoc {3}{6}{Manual seek: 12063,79NT}{21}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{26}{0}{4}

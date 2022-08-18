@@ -1,0 +1,277 @@
+\documentclass[serif,mathserif,aspectratio=169]{beamer}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{algorithm,algorithmic}
+\usepackage{pstricks,pst-node}
+\usepackage{multimedia}
+\usepackage[normal,tight,center]{subfigure}
+\setlength{\subfigcapskip}{-.5em}
+\usepackage{beamerthemesplit}
+\usetheme{keynote}
+\usepackage{color}
+%this is for the \hl{} highlight command 
+\usepackage{soul}
+%This makes it able to use different colours using \hlc[colourname]{}
+\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
+%This is for framing text
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{255,127,0}
+
+%----------Customize Title--
+\defbeamertemplate*{title page}{customized}[1][]
+{
+  \begin{shaded}
+  \usebeamerfont{title}\inserttitle\par
+  \end{shaded}
+  %\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  %\bigskip
+  %\usebeamerfont{author}\insertauthor\par
+  %\usebeamerfont{institute}\insertinstitute\par
+  %\usebeamerfont{date}\insertdate\par
+  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
+}
+
+%----------Beamer Modes---
+%These modes are loaded with \mode<mode name>. They may
+%also appear in the <overlay specification> option in the
+%\begin{frame} command or as an option to the
+%\documentclass.
+%\modebeamer %(default)
+%\modepresentation
+%\modehandout
+%\modetrans %(transparencies)
+%\modearticle
+%\modeall
+%----------Print Handouts---
+%To produce handouts, change the \documentclass command to
+%\documentclass[handout]{beamer} and add
+%\usepackage{pgfpages} This disables hyperlinks.
+%\pgfpagesuselayout{4 on 1} Puts 4 slides on each page.
+%\setbeamertemplate{navigation symbols}{} Turns on
+%navigation bars at the bottom of each slide.
+%----------Hacks-----------------
+%http://www.shawnlankton.com/2008/02/beamer-and-latex-with-keynote-theme/
+%\titlegraphic{\includegraphics[height=1cm]{iwmi}}
+%\pgfdeclareimage[height=0.5cm]{iwmi}{iwmi}
+%\logo{\pgfuseimage{iwmi}}
+\setbeamercolor{titlelike}{parent=structure,fg=white}
+%-----------------------------------
+
+\title[JRC\hspace{2em}\insertframenumber/\inserttotalframenumber]{MonSTERS InK}
+\author[Yann Chemin]{Yann Chemin }
+\institute{JRC}
+\date{} %leave out for today's date to be insterted
+
+\begin{document}
+
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{bg_coverpage}}
+\begin{frame}[plain]
+\titlepage
+\end{frame}}
+
+\Large
+
+\transdissolve<5>
+
+\begin{frame}
+  %\frametitle{Introduction}
+ Resources available:
+  
+\begin{table}
+\begin{tabular}{lclc}
+ Tesla & 139.191.148.131 & /data/canhemon\\
+ HPC-MPI & hpc-gw1.jrc.it & /home/hpctest\\
+ HPC-EOSSSD & ? & ?\\
+ \end{tabular}
+\end{table}
+
+\end{frame}
+
+\transdissolve<5>
+
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{bg_sub_64_64.png}}
+\begin{frame}[plain]
+\begin{shaded}
+\Huge Tesla
+\end{shaded}
+\end{frame}}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{Processing chain}
+\begin{center}
+\begin{itemize}
+ \item Fiji/ImageJ script 
+ \item GRASS script
+ \item Crown Indices script
+\end{itemize}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{GRASS script}
+\begin{center}
+\begin{itemize}
+ \item GRASS7 => RGBNIR (Acc port)
+ \item GRASS7 => thermal.sh (original port)
+ \item GRASS7 => rgbnir.sh (original port)
+ \item \textcolor{green}{TODO: GRASS7 original port of Hyperspectral}
+  \item \textcolor{green}{TODO: GRASS7 Acc port of Hyperspectral?}
+\end{itemize}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{thermal.sh in G7}
+\begin{center}
+\includegraphics[height=5cm]{G7_thermal_sh}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{rgbnir.sh in G7}
+\begin{center}
+\includegraphics[height=5cm]{G7_rgbnir_sh}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{Crown indices script}
+\begin{center}
+CaB linear Vs 2nd order ::::: cLAI linear Vs 2nd order\\
+\bigskip
+\includegraphics[height=5cm]{pt598000-4413000_CaB_and_cLAI_comp}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+\begin{frame}
+  \frametitle{Subsetting Vs crown creation}
+\begin{center}
+\begin{itemize}
+ \item Subset size impact on crown identification
+ \item Created 4x4,8x8,16x16,32x32,64x64,128x128 subsets
+ \item Reprocessed with Fiji/ImageJ script
+ \item Mosaicked back the crown shapefiles into one tile
+ \item \textcolor{green}{TODO: Land use based subsetting}
+\end{itemize}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{bg_hpc_mpi.png}}
+\begin{frame}[plain]
+\begin{shaded}
+\Huge HPC-MPI
+\end{shaded}
+\end{frame}}
+
+\transdissolve<5>
+
+\begin{frame}
+\begin{center}
+\begin{itemize}
+ \item MPI + OpenMP hydbrid
+ \item distRS test OK
+ \item PBS qsub issues (ticket filed Tuesday)
+ \item still a test user (2 nodes, 64 cores, 30min)
+\end{itemize}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{bg_hpc_mpi.png}}
+\begin{frame}[plain]
+\begin{shaded}
+\Huge HPC-EOSSSD
+\end{shaded}
+\end{frame}}
+
+\transdissolve<5>
+
+\begin{frame}
+\begin{center}
+\begin{itemize}
+ \item Dockerfile
+ \item Debian:testing
+ \item ImageJ/Fiji
+ \item GRASS-SVN compilation on build (v7.3)
+ \item \textcolor{green}{TODO: Use the CanHeMon scripts with it}
+ \item \textcolor{green}{TODO: Strategy on data distribution}
+\end{itemize}
+\end{center}
+\end{frame}
+
+\transdissolve<5>
+
+%\begin{frame}
+%  \frametitle{Water Level Virtual Gauge}
+%\begin{columns}
+%\column{0.45\textwidth}
+%\begin{center}
+%\begin{itemize}
+ %\item Landsat Imagery
+ %\item Water line
+ %\item 12cm V. accuracy
+ %\item 10-700Km2
+ %\item Next: \\Orbital Altimetry 
+%\end{itemize}
+%\end{center}
+%
+%\column{0.5\textwidth}
+%\begin{center}
+% \includegraphics[height=3cm]{IN_Maharana_Pratap_Sagar_wLVG1}
+% %\includegraphics[height=2.5cm]{PK_TarbelaDam_wLVG1)\\
+% %\includegraphics[height=3cm]{EG_AswanDam}
+%\end{center}
+%\end{columns}
+%\end{frame}
+
+%\transdissolve<5>
+
+%\begin{frame}
+%  \frametitle{Equations}
+%  Equations are easy
+%  \begin{itemize}
+%  \item Just copy and paste equations\pause
+%  \item From the paper!
+%    \begin{equation*}
+%      \textbf{p}^* = \underset{\textbf{p}}{\arg\!\min}~\sum_{\textbf{x}}\left[ I(\textbf{W}(\textbf{x};\textbf{p})) - T(\textbf{x}) \right]^2
+%    \end{equation*}
+%  \end{itemize}
+%\end{frame}
+%
+%\transdissolve<5>
+
+%\begin{frame}
+%  \frametitle{A Movie}
+%  \begin{center}
+%    \movie[height=5cm,width=6.5cm,poster,autostart,loop]{}{video1.avi}
+%  \end{center}
+%  \begin{itemize}
+%  \item Movies only seem to work in Adobe Reader
+%  \item Movie file is not embedded, it must be on the computer
+%  \end{itemize}
+%\end{frame}
+
+\transdissolve<5>
+
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{bg_crowns.png}}
+\begin{frame}[plain]
+\begin{shaded}
+\Huge Thank you
+\end{shaded}
+\end{frame}}
+\end{document}

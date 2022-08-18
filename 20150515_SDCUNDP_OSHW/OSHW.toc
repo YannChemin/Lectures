@@ -1,0 +1,18 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {2}{ MWS Tower}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Power Supply}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Wind Sensors}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Raingauge 1}{10}{0}{2}
+\beamer@subsectionintoc {2}{4}{Raingauge 2}{11}{0}{2}
+\beamer@subsectionintoc {2}{5}{Electronics}{12}{0}{2}
+\beamer@subsectionintoc {2}{6}{Weather Shield}{13}{0}{2}
+\beamer@sectionintoc {3}{Initial work}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Irrigation Dept.}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Met.Dept.}{16}{0}{3}
+\beamer@sectionintoc {4}{Adoption}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{LRWHF}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{SMEs}{20}{0}{4}
+\beamer@sectionintoc {5}{Media}{21}{0}{5}
+\beamer@sectionintoc {6}{Future}{23}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{25}{0}{7}

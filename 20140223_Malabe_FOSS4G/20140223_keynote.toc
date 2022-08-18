@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Welcome}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{ICA-Osgeo Labs}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{TGIS Lectures}{7}{0}{1}
+\beamer@sectionintoc {2}{Weather Station}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rationale}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Arduino MWS}{12}{0}{2}
+\beamer@sectionintoc {3}{Road condition}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Rationale}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{System}{16}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{17}{0}{4}

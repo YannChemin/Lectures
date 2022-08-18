@@ -1,0 +1,20 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {2}{Early Prototyping}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Rationale}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{ $\delta T$ Tower}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{ $\delta T$ parts}{11}{0}{2}
+\beamer@subsectionintoc {2}{4}{ $\delta T$ Setup}{12}{0}{2}
+\beamer@sectionintoc {3}{ MWS Tower}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Power Supply}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Wind Sensors}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Raingauge 1}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Raingauge 2}{19}{0}{3}
+\beamer@subsectionintoc {3}{5}{Electronics}{20}{0}{3}
+\beamer@subsectionintoc {3}{6}{Weather Shield}{21}{0}{3}
+\beamer@subsectionintoc {3}{7}{Set up}{22}{0}{3}
+\beamer@sectionintoc {4}{Software}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Arduino IDE}{24}{0}{4}
+\beamer@subsectionintoc {4}{2}{istSOS}{25}{0}{4}
+\beamer@subsectionintoc {4}{3}{PyWPS}{26}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{28}{0}{5}
