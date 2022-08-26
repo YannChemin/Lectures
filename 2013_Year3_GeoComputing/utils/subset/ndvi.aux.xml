@@ -1,0 +1,17 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">BAND</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="Band_1">Band 1</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Description>Band 1</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">2197.6692563818</MDI>
+      <MDI key="STATISTICS_MEAN">125.75627616172</MDI>
+      <MDI key="STATISTICS_MINIMUM">100</MDI>
+      <MDI key="STATISTICS_STDDEV">32.97904461807</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
