@@ -1,0 +1,30 @@
+https://earth.gsfc.nasa.gov/geo/missions/grace
+
+
+Gravity Recovery and Climate Experiment (GRACE)
+Grace
+
+To download the NASA GSFC global mascons click here
+
+ 
+
+GRACE Mission Overview
+
+The Gravity Recovery and Climate Experiment (GRACE) is a joint partnership between the National Aeronautics and Space Administration (NASA) in the United States and Deutsche Forschungsanstalt für Luft und Raumfahrt (DLR) in Germany [Tapley et al., 2004]. GRACE was selected as the second mission under the NASA Earth System Science Pathfinder (ESSP) Program in May 1997 and launched in March 2002. The accurate maps of time-variable gravity inferred from the GRACE observations have revolutionized the ability to monitor mass variability caused by a variety of geophysical processes, leading to important discoveries that span the Earth sciences. Sources of mass variability measured by GRACE include: changes due to surface and deep currents in the ocean; runoff and ground water storage on land masses; exchanges between ice sheets or glaciers and the ocean; and solid Earth mass changes from earthquakes and glacial isostatic adjustment. Designed for a nominal mission lifetime of five years, GRACE is currently operating in an extended mission phase, and is expected to continue through at least late 2017. The mission consists of two identical spacecraft that fly about 220 km apart in a near-polar orbit with an average mission altitude of about 450 km. GRACE maps Earth's gravity field with accurate measurements of the distance between the two satellites, made possible with the K-band microwave ranging system. The other key components of the instrument suite include GPS receivers for precise satellite positioning, star cameras for attitude determination, and on-board accelerometers for the removal of non-gravitational forces [Mission Project Home Page].
+
+The remarkable achievement of the GRACE mission is the culmination of many decades of algorithm development, technological advances, and expansion of computational capabilities. The NASA Goddard Space Flight Center (GSFC) has a long history of innovation and expertise in satellite tracking data analysis and gravity model development and applications. In 1955 John O'Keefe, at NASA GSFC, first proposed the use of artificial satellite tracking data analysis for measuring the Earth's gravity field, and in 1959 first observed the J3 term describing the Earth's pear shaped static gravity field with Vanguard 1 tracking data. Since it's beginning in 1964 and global expansion in the 1970's, satellite laser ranging (SLR) has provided valuable tracking observations that proved capable of resolving much more of the static gravity field than was previously possible, and still produces important measurements of the time-variable J2 term; a measure of Earth's oblateness. Beginning with the launch of TOPEX/Poseidon in 1992, a series of ocean altimetry missions have pushed the continuous and remarkable improvements in accuracy and spatial resolution of the Earth's gravity field for both precision orbit determination of the altimeter and for isolating currents through removal of the geoid contribution to ocean topography observations. This evolution is documented by the long series of Goddard Earth Model (GEM) solutions and EGM96 that were released by NASA GSFC over the years 1972 to 1998. The basic GRACE mission concept to observe Earth's time-variable gravity field with inter-satellite ranging measurements between two low Earth co-orbiting satellites was first proposed by Wolff [1969] and important algorithms for its implementation were developed by Colombo [1984]. Over the decades, the standard method of gravity determination has been the estimation of spherical harmonics, which are a set of scale factors applied to global periodic functions of different spatial frequencies on the surface of a sphere. An alternative approach to estimate mass concentration blocks (mascons) was first applied to the moon by Muller and Sjogren [1968]. The mascon technique for Earth time-variable gravity estimation from GRACE measurements was first developed and applied by the gravity group at NASA GSFC [Rowlands et al., 2005], and has since been expanded in a series of studies [Luthcke et al., 2006, 2008, 2013; Sabaka et al., 2010]. The latest global mascon product produced at NASA GSFC is now available for download.
+
+ 
+
+A more detailed overview of time-variable gravity estimation from GRACE and the motivation and implementation of the NASA GSFC mascon solutions is available at: Luthcke, S.B., D.D. Rowlands, T.J. Sabaka, B.D. Loomis, M. Horwath, and A.A. Arendt, (2015), "Chapter 10: Gravimetry measurements from space," Remote Sensing of the Cryosphere, Ed. M. Tedesco, Oxford:Wiley Blackwell, ISBN 9781118368855, 231-247. 
+
+NASA GSFC Mascons Overview
+
+    To download the NASA GSFC global mascons click here
+    The NASA GSFC global mascon product contains monthly estimates of time-variable gravity in units of cm equivalent water height (cm w.e.) for a global set of 41,168 1x1 arc-degree equal-area mass concentration blocks (mascons).
+    The mascons are directly determined from the GRACE Level-1B measurements, which include the inter-satellite K-band range-rate, GPS-determined orbits, attitude quaternions, and accelerometer measurements. 
+    The primary benefit of the mascon technique is the ability to apply a priori information through the application of spatial constraints in the least-squares adjustment procedure, significantly improving the solution signal-to-noise ratio and reducing signal leakage across constraint region boundaries.
+    Our signal covariance matrix applies the following constraint regions: 1.) GIS elevation below 2000m; 2.) GIS elevation above 2000m; 3.) Antarctic ice sheet and Ronne and Ross ice shelves; 4.) Gulf of Alaska; 5.) Land including glaciers; 6.) Ocean including other ice shelves and large seas.
+    Filtering should not be applied to the mascon solutions.
+    University of Colorado CCAR Mascon Visualization Tool
+

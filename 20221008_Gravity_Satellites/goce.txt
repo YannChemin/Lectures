@@ -1,0 +1,26 @@
+https://www.esa.int/Applications/Observing_the_Earth/FutureEO/GOCE/Introducing_GOCE
+
+Launched on 17 March 2009, ESA's Gravity field and steady-state Ocean Circulation Explorer (GOCE) mission was the first Earth Explorer mission in orbit.
+
+This novel mission delivered a wealth of data to bring about a whole new level of understanding of one of Earth's most fundamental forces of nature – the gravity field.
+
+This sleek, high-tech gravity satellite embodied many firsts in its design and use of new technology in space to map Earth's gravity field in unprecedented detail.
+
+As the most advanced gravity space mission to date, GOCE data are realising a broad range of fascinating new possibilities for oceanography, solid Earth physics, geodesy and sea-level research, and significantly contributing to furthering our understanding of climate change.
+
+Although invisible, gravity is a complex force of nature that has an immeasurable impact on our everyday lives. It is often assumed that the force of gravity on the surface of Earth has a constant value, but in fact the value of 'g' varies subtly from place to place.
+GOCE geoid
+GOCE geoid
+
+These variations are due to a number of factors such as the rotation of Earth, the position of mountains and ocean trenches and variations in density of Earth's interior.
+
+GOCE mapped these variations in the gravity field with extreme detail and accuracy.
+
+This resulted in a unique model of the 'geoid', which is the surface of equal gravitational potential defined by the gravity field – crucial for deriving accurate measurements of ocean circulation and sea-level change, both of which are affected by climate change.
+
+GOCE-derived data are also being used to understand more about processes occurring inside Earth and for use in practical applications such as surveying and levelling. In addition, the measurements are being used to improve estimates of polar ice-sheet thickness and their movement.
+
+On 21 October 2013, the mission came to a natural end when it ran out of fuel. Three weeks later, on 11
+
+Although its flight is over, the wealth of data from GOCE continues to be exploited to improve our understanding of ocean circulation, sea level, ice dynamics and Earth’s interior.
+

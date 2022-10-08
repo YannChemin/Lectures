@@ -1,0 +1,47 @@
+https://www.nasa.gov/directorates/heo/scan/services/missions/solarsystem/GRAIL.html
+
+
+
+GRAIL was a system of two satellites that orbited the moon in tandem measuring the lunar gravitational field in a similar manner to the Gravity Recovery and Climate Experiment (GRACE). With the information GRAIL gathered, scientists determined the structure of the lunar interior from the crust to core and advanced our understanding of the thermal evolution of the moon.
+
+Mission Duration: September 2011 - December 2012
+Operating Network: Deep Space Network
+
+
+https://www.nasa.gov/press/2014/october/nasa-mission-points-to-origin-of-ocean-of-storms-on-earth-s-moon/
+
+NASA Mission Points to Origin of “Ocean of Storms” on Earth’s Moon 
+
+Using data from NASA’s Gravity Recovery and Interior Laboratory (GRAIL), mission scientists have solved a lunar mystery almost as old as the moon itself.
+
+Early theories suggested the craggy outline of a region of the moon’s surface known as Oceanus Procellarum, or the Ocean of Storms, was caused by an asteroid impact. If this theory had been correct, the basin it formed would be the largest asteroid impact basin on the moon. However, mission scientists studying GRAIL data believe they have found evidence the craggy outline of this rectangular region -- roughly 1,600 miles (2,600 kilometers) across -- is actually the result of the formation of ancient rift valleys.
+
+"The nearside of the moon has been studied for centuries, and yet continues to offer up surprises for scientists with the right tools," said Maria Zuber, principal investigator of NASA's GRAIL mission, from the Massachusetts Institute of Technology, Cambridge. "We interpret the gravity anomalies discovered by GRAIL as part of the lunar magma plumbing system -- the conduits that fed lava to the surface during ancient volcanic eruptions."
+
+The surface of the moon’s nearside is dominated by a unique area called the Procellarum region, characterized by low elevations, unique composition, and numerous ancient volcanic plains.
+
+The rifts are buried beneath dark volcanic plains on the nearside of the moon and have been detected only in the gravity data provided by GRAIL. The lava-flooded rift valleys are unlike anything found anywhere else on the moon and may at one time have resembled rift zones on Earth, Mars and Venus.  The findings are published online in the journal Nature.
+
+Another theory arising from recent data analysis suggests this region formed as a result of churning deep in the interior of the moon that led to a high concentration of heat-producing radioactive elements in the crust and mantle of this region. Scientists studied the gradients in gravity data from GRAIL, which revealed a rectangular shape in resulting gravitational anomalies.
+
+"The rectangular pattern of gravity anomalies was completely unexpected," said Jeff Andrews-Hanna, a GRAIL co-investigator at the Colorado School of Mines in Golden, Colorado, and lead author of the paper. "Using the gradients in the gravity data to reveal the rectangular pattern of anomalies, we can now clearly and completely see structures that were only hinted at by surface observations."
+
+The rectangular pattern, with its angular corners and straight sides, contradicts the theory that Procellarum is an ancient impact basin, since such an impact would create a circular basin. Instead, the new research suggests processes beneath the moon’s surface dominated the evolution of this region.
+
+Over time, the region would cool and contract, pulling away from its surroundings and creating fractures similar to the cracks that form in mud as it dries out, but on a much larger scale.
+
+The study also noted a surprising similarity between the rectangular pattern of structures on the moon, and those surrounding the south polar region of Saturn’s icy moon Enceladus. Both patterns appear to be related to volcanic and tectonic processes operating on their respective worlds.
+
+"Our gravity data are opening up a new chapter of lunar history, during which the moon was a more dynamic place than suggested by the cratered landscape that is visible to the naked eye," said Andrews-Hanna. "More work is needed to understand the cause of this newfound pattern of gravity anomalies, and the implications for the history of the moon."
+
+Launched as GRAIL A and GRAIL B in September 2011, the probes, renamed Ebb and Flow, operated in a nearly circular orbit near the poles of the moon at an altitude of about 34 miles (55 kilometers) until their mission ended in December 2012. The distance between the twin probes changed slightly as they flew over areas of greater and lesser gravity caused by visible features, such as mountains and craters, and by masses hidden beneath the lunar surface.
+
+The twin spacecraft flew in a nearly circular orbit until the end of the mission on Dec. 17, 2012, when the probes intentionally were sent into the moon’s surface. NASA later named the impact site in honor of late astronaut Sally K. Ride, who was America's first woman in space and a member of the GRAIL mission team.
+
+GRAIL’s prime and extended science missions generated the highest resolution gravity field map of any celestial body. The map will provide a better understanding of how Earth and other rocky planets in the solar system formed and evolved.
+
+The GRAIL mission was managed by NASA’s Jet Propulsion Laboratory (JPL) in Pasadena, California, for NASA's Science Mission Directorate in Washington. The mission was part of the Discovery Program managed at NASA's Marshall Space Flight Center in Huntsville, Alabama. GRAIL was built by Lockheed Martin Space Systems in Denver.
+
+For more information about GRAIL, visit:
+
+http://www.nasa.gov/grail

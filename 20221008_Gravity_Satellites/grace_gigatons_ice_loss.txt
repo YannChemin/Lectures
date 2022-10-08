@@ -1,0 +1,9 @@
+https://www.nasa.gov/mission_pages/Grace/multimedia/chart20121129.html
+
+
+GRACE Time Series
+
+Monthly changes in Antarctic ice mass, in gigatones, as measured by NASA's Gravity Recovery and Climate Experiment (GRACE) satellites from 2003 to 2011. The data illustrate the continuing loss of ice from the continent. The plots here depict results from five different IMBIE team members using different methods. The data have been adjusted to reflect new models of post-glacial rebound.
+
+Image credit: NASA-JPL/Caltech; NASA GSFC; CU-Boulder; Technical University of Munich; Technical University of Denmark; Delft University of Technology, Aerospace Engineering, Netherlands; Durham University, UK; Leeds University, UK
+
